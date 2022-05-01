@@ -312,7 +312,7 @@ main > .cont-text-act-gral {
     justify-content: center;
     margin: 40px 0;
 }
-.btn-join > button {
+.btn-join > div {
     padding: 5px 10px;
     font-size: 1.1em;
     border: none;
@@ -322,12 +322,15 @@ main > .cont-text-act-gral {
     color: white;
     background-color: black;
     transition: all 0.5s;
-    font-family: 'Architects Daughter', cursive;
 }
-.btn-join > button:first-child {
+.btn-join > div:first-child {
     margin-right: 20px;
 }
-.btn-join > button:hover {
+.btn-join > div > a {
+    color: rgb(255, 255, 255);
+    font-family: 'Architects Daughter', cursive;
+}
+.btn-join > div > a:hover {
     color: goldenrod;
 }
 
