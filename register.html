@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/register.css">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto&display=swap"
+        rel="stylesheet">
+
+    <title>Activizip</title>
+</head>
+
+<body id="body">
+    <header>
+        <div class="cont-btn-header">
+            <button class="btn-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-globe2"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z" />
+                </svg>
+                Español
+            </button>
+        </div>
+        <div class="cont-btn-header">
+            <button class="btn-header" id="btn-login">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                </svg>
+                Login
+            </button>
+        </div>
+    </header>
+    <main>
+        <!-- FORM LOGIN -->
+        <form action="#" method="get">
+            <div class="cont-gral">
+
+                <div class="cont-header-form">
+                    <div>
+                        <h1>
+                            Registrate!
+                        </h1>
+                    </div>
+                </div>
+                <div class="cont-main-form">
+                    <div class="cont-name">
+                        <!-- input name -->
+                        <div>
+                            <div class="cont-title-input">
+                                <p>Nombres</p>
+                            </div>
+                            <label for="GET-name"></label>
+                            <input type="text" class="GET-name input-login" user="name" size="40" placeholder="Nombre">
+                        </div>
+                        <!-- input lastname -->
+                        <div>
+                            <div class="cont-title-input">
+                                <p>Apellidos</p>
+                            </div>
+                            <label for="GET-lastname"></label>
+                            <input type="text" class="GET-lastname input-login" user="lastname" size="40" placeholder="Apellidos">    
+                        </div>
+                    </div>
+                    <!-- input email -->
+                    <div class="cont-title-input">
+                        <p>Correo electrónico</p>
+                    </div>
+                    <label for="GET-user"></label>
+                    <input type="email" class="GET-user input-login" user="user" size="40" placeholder="Correo electronico">
+
+                    <!-- input password -->
+                    <div class="cont-title-input cont-password">
+                        <p>Contraseña nueva</p>
+                    </div>
+                    <label form="GET-password"></label>
+
+                    <!-- icon to see password -->
+                    <div class="cont-input-password">
+                        <input type="password" id="inputPass" class="GET-password input-login" name="password"
+                            placeholder="Contraseña">
+                        <!-- icons bootstrap -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            id="btn-show-pass" class="show-hide-pass bi bi-eye" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                            <path
+                                d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            id="btn-hide-pass" class="show-hide-pass bi bi-eye-slash" viewBox="0 0 16 16">
+                            <path
+                                d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7.028 7.028 0 0 0-2.79.588l.77.771A5.944 5.944 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.134 13.134 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755-.165.165-.337.328-.517.486l.708.709z" />
+                            <path
+                                d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829l.822.822zm-2.943 1.299.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829z" />
+                            <path
+                                d="M3.35 5.47c-.18.16-.353.322-.518.487A13.134 13.134 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7.029 7.029 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12-.708.708z" />
+                        </svg>
+                    </div>
+                    <!-- EDITAR -->
+                    <div class="cont-button-send">
+                        <input type="button" value="Sing in" class="input-login-button">
+                    </div>
+                    <div>
+                        <small>
+                            Al hacer clic en Registrarte, aceptas nuestras <a href="conditions.html">Condiciones</a>. Obtén
+                            más información sobre cómo recopilamos, usamos y compartimos tu información en la <a
+                                href="dataPolitics.html">Política de datos</a>, así como el uso que hacemos de las cookies y
+                            tecnologías similares en nuestra <a href="cookies">Política de cookies</a>. Es posible que te
+                            enviemos notificaciones por SMS que podrás desactivar cuando quieras.
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div>
+            <ul>
+                <li><a href="#">©2022 Activizip •</a></li>
+                <li><a href="#">Politica de privacidad •</a></li>
+                <li><a href="#">Condiciones de uso •</a></li>
+                <li><a href="#">Cookies</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/showHiddenPass.js"></script>
+</body>
+
+</html>

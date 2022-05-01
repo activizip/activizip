@@ -1,0 +1,381 @@
+/*-------------------------------------- GENERAL --------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+li {
+    list-style: none;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+
+/*-------------------------------------- HEADER GRAL --------------------------------------*/
+.header-nav {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/img-header.jpg) center/cover fixed, rgba(0, 0, 0, 0.565);
+    height: 750px;
+}
+
+/*-------------------------------------- NAV --------------------------------------*/
+/* container gral nav */
+.header-nav>div:first-child {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background: transparent;
+    color: white;
+    transition: all 150ms;
+    z-index: 99999;
+}
+
+/* nav with scroll */
+.header-nav>.cont-nav.retractil {
+    background: black;
+    transition: all 150ms;
+}
+
+/* nav */
+.header-nav>div>nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* container logo */
+.header-nav>div>nav>.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 0 10px;
+    border-radius: 0 0 10px 10px;
+    background: black;
+}
+.header-nav>div>nav>.logo>a {
+    font-family: 'Architects Daughter', cursive;
+    color: white;
+}
+.header-nav>div>nav>.logo>a:hover {
+    color: goldenrod;
+}
+
+/* container links register and login */
+.header-nav>div>nav>div>ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* links register and login */
+.header-nav>div>nav>div>ul>li {
+    background: black;
+    padding: 15px;
+    margin-right: 10px;
+    border-radius: 0 0 10px 10px;
+    font-family: 'Architects Daughter', cursive;
+}
+.header-nav>div>nav>div>ul>li:last-child {
+    margin-left: 5px;
+}
+/* links register and login:hover */
+.header-nav>div>nav>div>ul>li:hover, .header-nav>div>nav>div>ul>li>a:hover {
+    color: goldenrod;
+}
+.header-nav>div>nav>div>ul>li>a {
+    color: white;
+    font-family: 'Architects Daughter', cursive;
+}
+
+/*********************************
+** CONT HEADER SEARCH ACTIVITIE **
+**********************************/
+/* container form */
+.header-nav>div:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.form-search-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    border-radius: 5px;
+    background: white;
+}
+
+/* container inputs */
+.cont-input {
+    margin: 10px 5px;
+    min-width: 200px;
+    max-width: 20%;
+    justify-content: center;
+}
+
+/* gral inputs padding and border*/
+.input-search, .btn-search {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Architects Daughter', cursive;
+}
+.input-search {
+    border-bottom: 1px solid rgb(229, 229, 229);
+}
+.input-search:hover, #cont-activities:hover, #date:hover {
+    border-bottom: 1px solid rgba(165, 184, 195, 0.986);
+}
+.input-search:focus, #cont-activities:focus, #date:focus {
+    border-bottom: 1px 0px 1px 0px solid rgba(90, 90, 89, 0.617);
+    outline: none;
+}
+
+/* input search and location */
+.input-search {
+    width: auto;
+    font-size: 1em;
+    font-family: 'Architects Daughter', cursive;
+}
+.input-search::placeholder {
+    font-size: 1em;
+    color: rgb(171, 189, 189);
+}
+
+/* hago que el logo se posicione encima del input */
+.cont-input-search {
+    position: relative;
+}
+.bi-geo-alt-fill, .bi-search {
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(192, 192, 192);
+}
+
+/* input calendar */
+#date {
+    padding: 9px;
+    font-size: 1em;
+    border: none;
+    color: rgb(159, 159, 159);
+    background: url(../img/icon-calendary.png) no-repeat; /*agrego otro icono*/
+    background-size: 20px;
+    background-position: 90%;
+    border-bottom: 1px solid rgb(229, 229, 229);
+    font-family: 'Architects Daughter', cursive;
+}
+/* icon calendar */
+::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    opacity: 0; /*oculto el icono por defecto*/
+}
+
+/* button search */
+.btn-search {
+    width: 100%;
+    font-size: 1em;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+.btn-search:hover {
+    color: rgb(234, 227, 227);
+}
+
+/*-------------------------------------- MAIN --------------------------------------*/
+/* title main */
+main > header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+} 
+.cont-text-header {
+    max-width: 60%;
+    justify-content: center;
+    align-items: center;
+}
+.cont-text-header > p {
+    color: rgba(0, 0, 0, 0.767);
+    font-size: 1.6em;
+}
+.cont-text-header > h1, h2{
+    margin: 70px 0 20px 0;
+    text-align: center;
+    font-weight: bold;
+}
+.cont-text-header > p {
+    text-align: center;
+}
+
+/*-------------------------------------- GALERY ACTIVITIES --------------------------------------*/
+.section-cards {
+    display: flex;
+    justify-content: center;
+}
+.cont-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    width: 65%;
+    justify-content: center;
+    grid-gap: 45px;
+}
+.card {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.912);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+.cont-img {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+.img-prom {
+    width: 100%;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+.cont-info {
+    padding: 20px 10px;
+}
+
+/* title */
+.cont-info > h3 {
+    font-size: 1.1em;
+    font-weight: 600px;
+    color: white;
+    margin: 10px 0 15px 0;
+    font-family: 'Architects Daughter', cursive;
+}
+
+/* text */
+.cont-info > p {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+    color: rgb(209, 209, 209);
+    font-family: 'Architects Daughter', cursive;
+}
+
+/********************************
+** CONTAINER SUBTITLE CATEGORY **
+*********************************/
+main > .cont-text-act-gral {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 1.6em;
+    color: rgba(0, 0, 0, 0.891);
+} 
+.cont-text-act {
+    max-width: 60%;
+    justify-content: center;
+    align-items: center;
+}
+
+/********************
+** GALERY CATEGORY **
+*********************/
+.img-logo {
+    max-width: 200px;
+    opacity: 0.3;
+}
+.card2 > div {
+    display: flex;
+    justify-content: center;
+}
+.card2-text {
+    display: block;
+}
+.card2 > div:last-child > div > h3{
+    text-align: center;
+    font-size: 1.6;
+}
+.card2 > div:last-child > p{
+    font-size: 1.3em;
+}
+
+/**************************
+** BUTTON JOIN ACTIVIZIP **
+***************************/
+.btn-join {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+.btn-join > button {
+    padding: 5px 10px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    transition: all 0.5s;
+    font-family: 'Architects Daughter', cursive;
+}
+.btn-join > button:first-child {
+    margin-right: 20px;
+}
+.btn-join > button:hover {
+    color: goldenrod;
+}
+
+/*-------------------------------------- FOOTER --------------------------------------*/
+footer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 25px;
+    padding: 15px;
+    background: rgb(0, 0, 0);
+    z-index: 99999;
+}
+
+footer>div>ul {
+    display: flex;
+}
+
+footer>div>ul>li {
+    justify-content: center;
+    margin-right: 5px;
+    margin-right: 5px;
+    line-height: 25px;
+    list-style: none;
+}
+
+.border-text {
+    border-left: 1px solid white;
+    padding-left: 5px;
+}
+
+footer>div>ul>li>a {
+    color: rgb(255, 255, 255);
+}
+
+/*-------------------------------------- MEDIA QUERYS --------------------------------------*/
+@media (max-width: 650px) {
+    footer {
+        display: grid;
+        justify-content: center;
+    }
+    footer>div {
+        margin: 5px;
+    }
+    footer>div>ul>li {
+        display: flex;
+        align-content: center;
+    }
+}

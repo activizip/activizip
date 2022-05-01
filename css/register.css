@@ -1,0 +1,173 @@
+/********************** 
+** ESTILOS GENERALES **
+***********************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+body {
+    padding-bottom: 140px;
+    position: relative; /*esto puede dar problemas | puedo utilizar flex en toco caso: https://www.youtube.com/watch?v=PSD5pFi6bx4*/
+    
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background: rgb(239, 239, 239, 1);
+
+    min-height: 100vh;
+    color: rgb(3, 10, 64, 1);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    z-index: -999;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    padding: 70px 15px 20px 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/******************* 
+** ESTILOS HEADER **
+********************/
+header {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background: rgb(3, 10, 64, 1);
+}
+/* botones para acceder al login y registrarse */
+.cont-btn-header {
+    display: flex;
+}
+.btn-header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    background: rgb(3, 10, 64, 1);
+    border: none;
+    border-radius: 0;
+    font-size: 1em;
+    cursor: pointer;
+}
+.btn-header:hover {
+    background-color: #000000;
+}
+
+/* icon button header */
+.bi-globe2, .bi-person {
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+/* boton para registrarse */
+.cont-button-send {
+    margin: 20px 0;
+}
+
+.cont-button-send > .input-login-button {
+    border: none;
+}
+
+/******************* 
+** ESTILOS FOOTER **
+********************/
+footer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background: rgb(3, 10, 64, 1);
+    z-index: -999;
+}
+footer>div>ul {
+    display: flex;
+}
+footer>div>ul>li {
+    justify-content: center;
+    margin-right: 5px;
+    margin-right: 5px;
+    line-height: 25px;
+    list-style: none;
+}
+footer>div>ul>li>a{
+    color: rgb(255, 255, 255);
+}
+
+/*****************
+** MEDIA QUERYS **
+******************/
+@media (max-width: 650px) {
+    form {
+        max-width: 90%;
+    }
+
+    footer {
+        display: grid;
+        grid-template-rows: repeat(3, 33%);
+        justify-content: center;
+    }
+
+    footer>div {
+        margin: 5px;
+    }
+
+    footer>div>ul>li {
+        display: flex;
+        align-content: center;
+    }
+}
+
+/* CHEQUEARRRRR */
+#btn-login  {
+    display: none;
+}
+
+/* CONTAINER GRAL FORM */
+form > .cont-gral{
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 50px 2px rgb(219, 219, 219);
+}
+form {
+    max-width: 500px;
+}
+
+/* HEADER FORM */
+.cont-header-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 25px;
+    color: rgb(255, 255, 255);
+    background: rgb(3, 10, 64, 1);
+}
+h1 {
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+/* MAIN FORM */
+.cont-main-form {
+    padding: 25px;
+}
+
+/* container names */
+.cont-name {
+    display: grid;
+    justify-content: space-between;
+}
