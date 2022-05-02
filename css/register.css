@@ -81,6 +81,47 @@ header {
     border: none;
 }
 
+/*----------------------------- FORM CREATE ACTIVITY -----------------------------*/
+.cont-activity {
+    margin: 10px 0;
+}
+.option-gender {
+    display: flex;
+}
+.option-gender  > div {
+    align-self: end;
+    width: 100%;
+}
+#GET-gender, #GET-category {
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    padding: 10px;
+    color: gray;
+}
+
+/* inputs date */
+.cont-date {
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+}
+.cont-input-date:first-child {
+    margin-right: 10px;
+}
+.cont-input-date:last-child {
+    margin-left: 10px;
+}
+.input-date {
+    width: 100%;
+    padding: 10px;
+}
+
+.cont-price-people {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.cont-price-people > div:first-child {
+    margin-right: 10px;
+}
 /******************* 
 ** ESTILOS FOOTER **
 ********************/

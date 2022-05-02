@@ -80,7 +80,7 @@
 }
 
 /* inputs de entrada */
-.input-login {
+.input-login, .input-date, .options, #GET-gender, #GET-category {
 	width: 100%;
 	padding: 10px;
 	font-size: 1em;
@@ -88,16 +88,16 @@
 	border: 1px solid rgb(209, 218, 218);
 }
 
-.input-login::placeholder {
+.input-login::placeholder, .input-date::placeholder, .options::placeholder, #GET-gender::placeholder {
 	font-size: 0.8em;
 	color: rgb(171, 189, 189);
 }
 
-.input-login:hover {
+.input-login:hover, .input-date:hover, .options:hover, #GET-gender:hover, #GET-category:hover {
 	border: 1px solid rgba(165, 184, 195, 0.986);
 }
 
-.input-login:focus {
+.input-login:focus, .input-date:focus,  #GET-gender:focus, #GET-category:focus {
 	border: 1px solid rgba(3, 10, 64, 0.617);
 	outline: none;
 }

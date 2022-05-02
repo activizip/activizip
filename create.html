@@ -44,7 +44,7 @@
     </header>
     <main>
         <!-- FORM NEW ACTIVITY -->
-        <form action="#" method="get">
+        <form action="form.php" method="POST">
             <div class="cont-gral">
                 <div class="cont-header-form">
                     <div>
@@ -54,18 +54,98 @@
                     </div>
                 </div>
                 <div class="cont-main-form">
-                    
-                    <!-- EDITAR -->
+                    <div class="cont-name">
+                        <!-- input name activity -->
+                        <div class="cont-activity">
+                            <label for="GET-name">Nombre actividad</label>
+                            <input type="text" name="name" size="40" class="GET-name input-login"
+                                placeholder="Senderismo en Casa de campo">
+                        </div>
+                        <!-- Category -->
+                        <div class="cont-activity">
+                            <div class="cont-activity option-gender">
+                                <div>
+                                    <select name="Category" id="GET-category">
+                                        <option class="options" selected="true" value="" disabled>Categoría de actividad</option>
+                                        <option class="options" value="SP">Ocio</option>
+                                        <option class="options" value="M">Deporte</option>
+                                        <option class="options" value="F">Viajes</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- input date activity -->
+                        <div class="cont-date">
+                            <!-- day -->
+                            <div class="cont-input-date">
+                                <label for="GET-day">Día: </label>
+                                <input type="text" name="day" class="input-date" id="GET-day" placeholder="31">
+                            </div>
+                            <!-- month -->
+                            <div class="cont-input-date">
+                                <label for="GET-month">Mes: </label>
+                                <input type="text" name="month" class="input-date" id="GET-month" placeholder="Marzo">
+                            </div>
+                            <!-- hour -->
+                            <div class="cont-input-date">
+                                <label for="GET-hour">Hora: </label>
+                                <input type="text" name="hour" class="input-date" id="GET-hour" placeholder="14:30">
+                            </div>
+                        </div>
+                        <!-- place -->
+                        <div class="cont-activity">
+                            <label for="GET-place">Dirección</label>
+                            <input type="text" name="place" class="GET-place input-login"
+                                placeholder="Madrid, Calle Carlos arniches 9">
+                        </div>
+                        <div class="cont-price-people">
+                            <!-- cant people  -->
+                            <div class="cont-activity">
+                                <label for="GET-cant-people">Nº de participantes</label>
+                                <input type="text" name="cant-people" id="GET-cant-people" class="input-login"
+                                    placeholder="Al menos 1 participante">
+                            </div>
+                            <!-- price -->
+                            <div class="cont-activity">
+                                <label for="GET-price">Precio de actividad</label>
+                                <input type="text" name="price" id="GET-price" class="input-login" placeholder="8,50€ / Gratis">
+                            </div>
+                        </div>
+
+                        <div class="cont-price-people">
+                            <!-- age  -->
+                            <div class="cont-activity">
+                                <label for="GET-age">Edad</label>
+                                <input type="text" name="age" id="GET-age" class="input-login"
+                                    placeholder="Solo mayores de 18 años">
+                            </div>
+                            <!-- sexo -->
+                            <div class="cont-activity option-gender">
+                                <div>
+                                    <select name="Gender" id="GET-gender">
+                                        <option class="options" selected="true" value="" disabled>Elija generos</option>
+                                        <option class="options" value="SP">Sin preferencia</option>
+                                        <option class="options" value="M">Masculino</option>
+                                        <option class="options" value="F">Femenino</option>
+                                        <option class="options" value="B">Otro</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- button CREAR -->
                     <div class="cont-button-send">
                         <input type="button" value="Create" class="input-login-button">
                     </div>
                     <div>
                         <small>
-                            Al hacer clic en Registrarte, aceptas nuestras <a href="conditions.html">Condiciones</a>. Obtén
+                            Al hacer clic en Registrarte, aceptas nuestras <a href="conditions.html">Condiciones</a>.
+                            Obtén
                             más información sobre cómo recopilamos, usamos y compartimos tu información en la <a
-                                href="dataPolitics.html">Política de datos</a>, así como el uso que hacemos de las cookies y
-                            tecnologías similares en nuestra <a href="cookies">Política de cookies</a>. Es posible que te
-                            enviemos notificaciones por SMS que podrás desactivar cuando quieras.
+                                href="dataPolitics.html">Política de datos</a>, así como el uso que hacemos de las
+                            cookies y
+                            tecnologías similares en nuestra <a href="cookies">Política de cookies</a>.
                         </small>
                     </div>
                 </div>
