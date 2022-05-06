@@ -33,7 +33,7 @@
 	cursor: pointer;
 }
 
-/*-------------------------------------- FORMULARIO LOGIN --------------------------------------*/
+/*-------------------------------------- FORMULARIO --------------------------------------*/
 .tag-a-login {
 	color: #00c6cd;
 }
@@ -79,6 +79,7 @@
 	align-self: flex-end;
 }
 
+/*-------------------------------------- INPUSTS FORM --------------------------------------*/
 /* inputs de entrada */
 .input-login, .input-date, .options, #GET-gender, #GET-category {
 	width: 100%;
@@ -169,6 +170,7 @@
 	color: rgb(255, 255, 255);
 	border-radius: 5px;
 	cursor: pointer;
+	border: none;
 }
 
 /************************* 

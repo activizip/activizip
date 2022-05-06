@@ -1,18 +1,21 @@
 /*-------------------------------------- GENERAL --------------------------------------*/
-
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Mulish:ital,wght@1,300&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-weight: lighter;
     letter-spacing: 1px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    font-family: 'Mulish', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
 }
+
 li {
     list-style: none;
     cursor: pointer;
 }
+
 a {
     text-decoration: none;
 }
@@ -59,10 +62,11 @@ a {
     border-radius: 0 0 10px 10px;
     background: black;
 }
+
 .header-nav>div>nav>.logo>a {
-    font-family: 'Architects Daughter', cursive;
     color: white;
 }
+
 .header-nav>div>nav>.logo>a:hover {
     color: goldenrod;
 }
@@ -79,18 +83,20 @@ a {
     padding: 15px;
     margin-right: 10px;
     border-radius: 0 0 10px 10px;
-    font-family: 'Architects Daughter', cursive;
 }
+
 .header-nav>div>nav>div>ul>li:last-child {
     margin-left: 5px;
 }
+
 /* links register and login:hover */
-.header-nav>div>nav>div>ul>li:hover, .header-nav>div>nav>div>ul>li>a:hover {
+.header-nav>div>nav>div>ul>li:hover,
+.header-nav>div>nav>div>ul>li>a:hover {
     color: goldenrod;
 }
+
 .header-nav>div>nav>div>ul>li>a {
     color: white;
-    font-family: 'Architects Daughter', cursive;
 }
 
 /*********************************
@@ -103,6 +109,7 @@ a {
     align-items: center;
     height: 100%;
 }
+
 .form-search-header {
     display: flex;
     flex-direction: row;
@@ -124,19 +131,26 @@ a {
 }
 
 /* gral inputs padding and border*/
-.input-search, .btn-search {
+.input-search,
+.btn-search {
     padding: 10px;
     border: none;
     cursor: pointer;
-    font-family: 'Architects Daughter', cursive;
 }
+
 .input-search {
     border-bottom: 1px solid rgb(229, 229, 229);
 }
-.input-search:hover, #cont-activities:hover, #date:hover {
+
+.input-search:hover,
+#cont-activities:hover,
+#date:hover {
     border-bottom: 1px solid rgba(165, 184, 195, 0.986);
 }
-.input-search:focus, #cont-activities:focus, #date:focus {
+
+.input-search:focus,
+#cont-activities:focus,
+#date:focus {
     border-bottom: 1px 0px 1px 0px solid rgba(90, 90, 89, 0.617);
     outline: none;
 }
@@ -145,8 +159,8 @@ a {
 .input-search {
     width: auto;
     font-size: 1em;
-    font-family: 'Architects Daughter', cursive;
 }
+
 .input-search::placeholder {
     font-size: 1em;
     color: rgb(171, 189, 189);
@@ -156,7 +170,9 @@ a {
 .cont-input-search {
     position: relative;
 }
-.bi-geo-alt-fill, .bi-search {
+
+.bi-geo-alt-fill,
+.bi-search {
     position: absolute;
     left: -20px;
     top: 50%;
@@ -170,16 +186,18 @@ a {
     font-size: 1em;
     border: none;
     color: rgb(159, 159, 159);
-    background: url(../img/icon-calendary.png) no-repeat; /*agrego otro icono*/
+    background: url(../img/icon-calendary.png) no-repeat;
+    /*agrego otro icono*/
     background-size: 20px;
     background-position: 90%;
     border-bottom: 1px solid rgb(229, 229, 229);
-    font-family: 'Architects Daughter', cursive;
 }
+
 /* icon calendar */
 ::-webkit-calendar-picker-indicator {
     cursor: pointer;
-    opacity: 0; /*oculto el icono por defecto*/
+    opacity: 0;
+    /*oculto el icono por defecto*/
 }
 
 /* button search */
@@ -190,32 +208,38 @@ a {
     color: white;
     background-color: rgb(0, 0, 0);
 }
+
 .btn-search:hover {
     color: rgb(234, 227, 227);
 }
 
 /*-------------------------------------- MAIN --------------------------------------*/
 /* title main */
-main > header {
+main>header {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
-} 
+}
+
 .cont-text-header {
     max-width: 60%;
     justify-content: center;
     align-items: center;
 }
-.cont-text-header > p {
+
+.cont-text-header>p {
     color: rgba(0, 0, 0, 0.767);
     font-size: 1.6em;
 }
-.cont-text-header > h1, h2{
+
+.cont-text-header>h1,
+h2 {
     margin: 70px 0 20px 0;
     text-align: center;
     font-weight: bold;
 }
-.cont-text-header > p {
+
+.cont-text-header>p {
     text-align: center;
 }
 
@@ -224,6 +248,7 @@ main > header {
     display: flex;
     justify-content: center;
 }
+
 .cont-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -231,51 +256,54 @@ main > header {
     justify-content: center;
     grid-gap: 45px;
 }
+
 .card {
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.912);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
 }
+
 .cont-img {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
+
 .img-prom {
     width: 100%;
     display: block;
     border-radius: 10px 10px 0 0;
 }
+
 .cont-info {
     padding: 20px 10px;
 }
 
 /* title */
-.cont-info > h3 {
+.cont-info>h3 {
     font-size: 1.1em;
     font-weight: 600px;
     color: white;
     margin: 10px 0 15px 0;
-    font-family: 'Architects Daughter', cursive;
 }
 
 /* text */
-.cont-info > p {
+.cont-info>p {
     font-size: 15px;
     line-height: 30px;
     font-weight: 400;
     color: rgb(209, 209, 209);
-    font-family: 'Architects Daughter', cursive;
 }
 
 /********************************
 ** CONTAINER SUBTITLE CATEGORY **
 *********************************/
-main > .cont-text-act-gral {
+main>.cont-text-act-gral {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
     font-size: 1.6em;
     color: rgba(0, 0, 0, 0.891);
-} 
+}
+
 .cont-text-act {
     max-width: 60%;
     justify-content: center;
@@ -289,18 +317,22 @@ main > .cont-text-act-gral {
     max-width: 200px;
     opacity: 0.3;
 }
-.card2 > div {
+
+.card2>div {
     display: flex;
     justify-content: center;
 }
+
 .card2-text {
     display: block;
 }
-.card2 > div:last-child > div > h3{
+
+.card2>div:last-child>div>h3 {
     text-align: center;
     font-size: 1.6;
 }
-.card2 > div:last-child > p{
+
+.card2>div:last-child>p {
     font-size: 1.3em;
 }
 
@@ -312,7 +344,8 @@ main > .cont-text-act-gral {
     justify-content: center;
     margin: 40px 0;
 }
-.btn-join > div {
+
+.btn-join>div {
     padding: 5px 10px;
     font-size: 1.1em;
     border: none;
@@ -322,16 +355,6 @@ main > .cont-text-act-gral {
     color: white;
     background-color: black;
     transition: all 0.5s;
-}
-.btn-join > div:first-child {
-    margin-right: 20px;
-}
-.btn-join > div > a {
-    color: rgb(255, 255, 255);
-    font-family: 'Architects Daughter', cursive;
-}
-.btn-join > div > a:hover {
-    color: goldenrod;
 }
 
 /*-------------------------------------- FOOTER --------------------------------------*/
@@ -374,9 +397,11 @@ footer>div>ul>li>a {
         display: grid;
         justify-content: center;
     }
+
     footer>div {
         margin: 5px;
     }
+
     footer>div>ul>li {
         display: flex;
         align-content: center;
