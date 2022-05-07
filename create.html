@@ -43,7 +43,7 @@
                         <!-- input name activity -->
                         <div class="cont-activity">
                             <label for="GET-name">Nombre actividad</label>
-                            <input type="text" name="name" size="40" class="GET-name input-login"
+                            <input type="text" name="name" size="60" id="GET-name" class="input-login"
                                 placeholder="Senderismo en Casa de campo">
                         </div>
                         <!-- Category -->
@@ -52,9 +52,9 @@
                                 <div>
                                     <select name="Category" id="GET-category">
                                         <option class="options" selected="true" value="" disabled>Categoría de actividad</option>
-                                        <option class="options" value="SP">Ocio</option>
-                                        <option class="options" value="M">Deporte</option>
-                                        <option class="options" value="F">Viajes</option>
+                                        <option class="options" value="ocio">Ocio</option>
+                                        <option class="options" value="deporte">Deporte</option>
+                                        <option class="options" value="viajes">Viajes</option>
                                     </select>
                                 </div>
                             </div>
@@ -79,8 +79,8 @@
                         </div>
                         <!-- place -->
                         <div class="cont-activity">
-                            <label for="GET-place">Dirección</label>
-                            <input type="text" name="place" class="GET-place input-login"
+                            <label for="GET-addres">Dirección</label>
+                            <input type="text" name="addres" id="GET-addres" class="input-login"
                                 placeholder="Madrid, Calle Carlos arniches 9">
                         </div>
                         <div class="cont-price-people">
@@ -109,10 +109,10 @@
                                 <div>
                                     <select name="Gender" id="GET-gender">
                                         <option class="options" selected="true" value="" disabled>Elija generos</option>
-                                        <option class="options" value="SP">Sin preferencia</option>
-                                        <option class="options" value="M">Masculino</option>
-                                        <option class="options" value="F">Femenino</option>
-                                        <option class="options" value="B">Otro</option>
+                                        <option class="options" value="sinPreferencia">Sin preferencia</option>
+                                        <option class="options" value="masculino">Masculino</option>
+                                        <option class="options" value="femenino">Femenino</option>
+                                        <option class="options" value="otro">Otro</option>
                                     </select>
                                 </div>
                             </div>
@@ -121,7 +121,7 @@
 
                     <!-- button CREAR -->
                     <div class="cont-button-send">
-                        <input type="button" value="Create" class="input-login-button">
+                        <input type="button" value="Create" id="input-create-button">
                     </div>
                     <div>
                         <small>
@@ -148,7 +148,7 @@
             </ul>
         </div>
     </footer>
-    <script src="js/showHiddenPass.js"></script>
+    <script src="js/newActivity.js"></script>
 </body>
 
 </html>
