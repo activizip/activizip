@@ -29,7 +29,7 @@
     </header>
     <main class="main-create-activity">
         <!-- FORM NEW ACTIVITY -->
-        <form action="form.php" method="POST">
+        <form onsubmit="return false" method="GET">
             <div class="cont-gral">
                 <div class="cont-header-form">
                     <div>
@@ -40,18 +40,14 @@
                 </div>
                 <div class="cont-main-form">
                     <div class="cont-name">
-                        <!-- input name activity -->
-                        <div class="cont-activity">
-                            <label for="GET-name">Nombre actividad</label>
-                            <input type="text" name="name" size="60" id="GET-name" class="input-login"
-                                placeholder="Senderismo en Casa de campo">
-                        </div>
                         <!-- Category -->
                         <div class="cont-activity">
                             <div class="cont-activity option-gender">
                                 <div>
-                                    <select name="Category" id="GET-category">
-                                        <option class="options" selected="true" value="" disabled>Categoría de actividad</option>
+                                    <select name="Category" id="GET-category" required>
+                                        <option class="options" selected="true" value="" disabled>Categoría de actividad
+                                            <small class="obligatory">*</small>
+                                        </option>
                                         <option class="options" value="ocio">Ocio</option>
                                         <option class="options" value="deporte">Deporte</option>
                                         <option class="options" value="viajes">Viajes</option>
@@ -59,79 +55,82 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- input name activity -->
+                        <div class="cont-activity">
+                            <label for="GET-name">Nombre actividad <small class="obligatory">*</small></label>
+                            <input type="text" name="name" size="60" id="GET-name" class="input-login"
+                                placeholder="Senderismo en Casa de campo" required>
+                        </div>
                         <!-- input date activity -->
                         <div class="cont-date">
-                            <!-- day -->
+                            <!-- day and month -->
                             <div class="cont-input-date">
-                                <label for="GET-day">Día: </label>
-                                <input type="text" name="day" class="input-date" id="GET-day" placeholder="31">
-                            </div>
-                            <!-- month -->
-                            <div class="cont-input-date">
-                                <label for="GET-month">Mes: </label>
-                                <input type="text" name="month" class="input-date" id="GET-month" placeholder="Marzo">
+                                <label for="GET-date">Fecha <small class="obligatory">*</small></label>
+                                <input id="datePickerId" type="date" name="date">
                             </div>
                             <!-- hour -->
                             <div class="cont-input-date">
-                                <label for="GET-hour">Hora: </label>
-                                <input type="text" name="hour" class="input-date" id="GET-hour" placeholder="14:30">
+                                <label for="GET-hour">Hora <small class="obligatory">*</small></label>
+                                <input id="hourPickerId" type="time" value="14:30" name="appt" required>
                             </div>
                         </div>
                         <!-- place -->
                         <div class="cont-activity">
-                            <label for="GET-addres">Dirección</label>
+                            <label for="GET-addres">Ubicación <small class="obligatory">*</small></label>
                             <input type="text" name="addres" id="GET-addres" class="input-login"
-                                placeholder="Madrid, Calle Carlos arniches 9">
+                                placeholder="Madrid, Calle Carlos arniches 9" required>
                         </div>
-                        <div class="cont-price-people">
+                        <div class="cont-price-age">
                             <!-- cant people  -->
                             <div class="cont-activity">
-                                <label for="GET-cant-people">Nº de participantes</label>
+                                <label for="GET-cant-people">Nº max. de participantes </label>
                                 <input type="text" name="cant-people" id="GET-cant-people" class="input-login"
                                     placeholder="Al menos 1 participante">
                             </div>
                             <!-- price -->
                             <div class="cont-activity">
-                                <label for="GET-price">Precio de actividad</label>
-                                <input type="text" name="price" id="GET-price" class="input-login" placeholder="8,50€ / Gratis">
+                                <label for="GET-price">Precio de actividad <small class="obligatory">*</small></label>
+                                <input type="text" name="price" id="GET-price" class="input-login"
+                                    placeholder="8,50 / Gratis" required>
                             </div>
                         </div>
 
-                        <div class="cont-price-people">
+                        <div class="cont-price-age">
                             <!-- age  -->
                             <div class="cont-activity">
-                                <label for="GET-age">Edad</label>
+                                <label for="GET-age">Edad min.</label>
                                 <input type="text" name="age" id="GET-age" class="input-login"
-                                    placeholder="Solo mayores de 18 años">
+                                    placeholder="Edad min. del participante">
                             </div>
-                            <!-- sexo -->
-                            <div class="cont-activity option-gender">
-                                <div>
-                                    <select name="Gender" id="GET-gender">
-                                        <option class="options" selected="true" value="" disabled>Elija generos</option>
-                                        <option class="options" value="sinPreferencia">Sin preferencia</option>
-                                        <option class="options" value="masculino">Masculino</option>
-                                        <option class="options" value="femenino">Femenino</option>
-                                        <option class="options" value="otro">Otro</option>
-                                    </select>
-                                </div>
+                            <div class="cont-activity">
+                                <label for="GET-age">Edad max.</label>
+                                <input type="text" name="ageMax" id="GET-ageMax" class="input-login"
+                                    placeholder="Edad max. del participante">
+                            </div>
+                        </div>
+
+                        <!-- sexo -->
+                        <div class="cont-activity option-gender">
+                            <div>
+                                <select name="Gender" id="GET-gender">
+                                    <option class="options" selected="true" value="" disabled>Elija generos</option>
+                                    <option class="options" value="sinPreferencia">Sin preferencia</option>
+                                    <option class="options" value="masculino">Masculino</option>
+                                    <option class="options" value="femenino">Femenino</option>
+                                    <option class="options" value="otro">Otro</option>
+                                </select>
                             </div>
                         </div>
                     </div>
 
                     <!-- button CREAR -->
                     <div class="cont-button-send">
-                        <input type="button" value="Create" id="input-create-button">
+                        <input type="submit" value="Create" id="input-create-button">
                     </div>
                     <div>
-                        <small>
-                            Al hacer clic en Registrarte, aceptas nuestras <a href="conditions.html">Condiciones</a>.
-                            Obtén
-                            más información sobre cómo recopilamos, usamos y compartimos tu información en la <a
-                                href="dataPolitics.html">Política de datos</a>, así como el uso que hacemos de las
-                            cookies y
-                            tecnologías similares en nuestra <a href="cookies">Política de cookies</a>.
-                        </small>
+                        <p class="msj-obligatory">
+                            Todos los datos con (<small class="obligatory">*</small>) son obligatorios
+                        </p>
                     </div>
                 </div>
             </div>
@@ -149,6 +148,7 @@
         </div>
     </footer>
     <script src="js/newActivity.js"></script>
+    <script src="js/date.js"></script>
 </body>
 
 </html>

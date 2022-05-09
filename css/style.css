@@ -146,13 +146,13 @@ a {
 
 .input-search:hover,
 #cont-activities:hover,
-#date:hover {
+#datePickerId:hover {
     border-bottom: 1px solid rgba(165, 184, 195, 0.986);
 }
 
 .input-search:focus,
 #cont-activities:focus,
-#date:focus {
+#datePickerId:focus {
     border-bottom: 1px 0px 1px 0px solid rgba(90, 90, 89, 0.617);
     outline: none;
 }
@@ -183,7 +183,7 @@ a {
 }
 
 /* input calendar */
-#date {
+#datePickerId {
     padding: 9px;
     font-size: 1em;
     border: none;
