@@ -1,5 +1,5 @@
-
 /*-------------------------------------- INPUSTS FORM --------------------------------------*/
+
 /* inputs de entrada */
 .input-login, .input-date, .options, #GET-gender, #GET-category {
 	width: 100%;
@@ -56,6 +56,14 @@
 
 .bi-eye-slash {
 	display: none;
+}
+
+.cont-age-gender {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+.cont-age-gender > div:first-child {
+	margin-right: 10px;
 }
 
 /************************* 

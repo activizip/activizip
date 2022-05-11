@@ -11,7 +11,6 @@
 }
 
 body {
-    padding-bottom: 140px;
     position: relative; /*esto puede dar problemas | puedo utilizar flex en toco caso: https://www.youtube.com/watch?v=PSD5pFi6bx4*/
     
     display: flex;
@@ -29,7 +28,6 @@ body {
 main {
     display: flex;
     align-items: center;
-    padding: 70px 15px 20px 5px;
 }
 
 a {
@@ -162,10 +160,4 @@ h1 {
 /* MAIN FORM */
 .cont-main-form {
     padding: 25px;
-}
-
-/* container names */
-.cont-name {
-    display: grid;
-    justify-content: space-between;
 }
