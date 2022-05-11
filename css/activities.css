@@ -1,0 +1,173 @@
+/* ------------------------------------ ESTILOS GENERALES ------------------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    padding-bottom: 140px;
+    display: flex;
+    position: relative; 
+    align-self: center;
+    background: rgb(246, 246, 246);
+
+    min-height: 100vh;
+    color: rgb(3, 10, 64, 1);
+    font-weight: 500;
+    font-size: 1em;
+    z-index: -999;
+}
+
+main {
+    display: flex;
+    /* align-items: center; */
+    padding: 70px 10px 20px 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ------------------------------------ ESTILOS HEADER ------------------------------------ */
+.header {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background: rgb(3, 10, 64, 1);
+}
+/* botones para acceder al login y registrarse */
+.cont-btn-header {
+    display: flex;
+}
+.btn-header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: rgb(3, 10, 64, 1);
+    border: none;
+    border-radius: 0;
+    font-size: 1em;
+    cursor: pointer;
+    border-right: 1px solid white;
+}
+.btn-header:hover {
+    background-color: #120331;
+}
+.btn-header > a {
+    color: white;
+}
+
+/* icon button header */
+.bi-person {
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+/* ------------------------------------ MAIN ------------------------------------ */
+.main-activity {
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+}
+/* ------------------------------------ title activities ------------------------------------ */
+.header-activities {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+/* ------------------------------------ cards ------------------------------------ */
+.cont-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-content: center;
+    grid-gap: 45px;
+}
+.card {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    padding: 15px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.912);
+    box-shadow: 0 10px 40px rgba(7, 7, 7, 0.088);
+}
+
+/*----------------------- image -----------------------*/
+.cont-img {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+}
+.cont-img > img {
+    width: 80px;
+    height: 85px;
+    justify-content: center;
+    object-fit: cover;
+    border-radius: 60px;
+}
+
+/*----------------------- Date -----------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+#date {
+    display: flex;
+    font-family: 'Archivo Black', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 0.6;
+}
+
+/* ------------------------------------ ESTILOS FOOTER ------------------------------------ */
+footer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background: rgb(3, 10, 64, 1);
+    z-index: -999;
+}
+footer>div>ul {
+    display: flex;
+}
+footer>div>ul>li {
+    justify-content: center;
+    margin-right: 5px;
+    margin-right: 5px;
+    line-height: 25px;
+    list-style: none;
+}
+footer>div>ul>li>a{
+    color: rgb(255, 255, 255);
+}
+
+/*****************
+** MEDIA QUERYS **
+******************/
+@media (max-width: 650px) {
+    form {
+        max-width: 90%;
+    }
+
+    footer {
+        display: grid;
+        grid-template-rows: repeat(3, 33%);
+        justify-content: center;
+    }
+
+    footer>div {
+        margin: 5px;
+    }
+
+    footer>div>ul>li {
+        display: flex;
+        align-content: center;
+    }
+}
