@@ -8,8 +8,7 @@
     <title>Activizip</title>
 
     <!-- styles -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
@@ -23,7 +22,8 @@
                 <div>
                     <!-- botones -->
                     <ul>
-                        <li><a id="boton-mensaje" href="#">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="login.html">Login</a></li>
                     </ul>
                 </div>
             </nav>
@@ -40,7 +40,7 @@
                 </div>
                 <div class="cont-input cont-input-search">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        class="bi bi-geo-alt-fill locationIcon1" viewBox="0 0 16 16">
                         <path
                             d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
                     </svg>
@@ -59,7 +59,7 @@
     <main>
         <header>
             <div class="cont-text-header">
-                <h1>Actividades destacadas</h1>
+                <h1>Actividades</h1>
                 <p>
                     Si te cuesta encontrar a alguien con quien realizar algún deporte, iniciar un viaje o tan solo
                     conocer nuevos amigos...
@@ -73,216 +73,143 @@
         <section class="section-cards">
             <div class="cont-cards">
                 <div class="card">
-                    <div class="cont-img">
-                        <img src="img/img-1.jpg" alt="imagen actividad" title="imagen realizando una actividad"
-                            class="img-prom">
-                    </div>
-                    <div class="cont-info">
-                        <h3>Senderismo</h3>
-                        <p>
-                            Almost before we knew it.
-                        </p>
-                    </div>
+                    <a href="activity.html">
+                        <div class="cont-img">
+                            <img src="img/img-1.jpg" alt="imagen actividad" title="imagen realizando una actividad"
+                                class="img-prom">
+                        </div>
+                        <div class="cont-info">
+                            <h3 id="activityName"></h3>
+                            <div class="cont-location">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-geo-alt-fill locationIcon2" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                </svg>
+                                <p id="activityLocation"></p>
+                            </div>
+                            <div id="date">
+                                <div>
+                                    <p id="activityDay"></p>
+                                    <p id="activityMonth"></p>
+                                    <p id="activityYear"></p>
+                                </div>
+                                <div>
+                                    <p id="activityHour"></p>
+                                </div>
+                            </div>
+                            <p id="activityPeople"></p>
+                            <p id="activityAge"></p>
+                            <button class="btn-price">
+                                <p id="activityPrice"></p>
+                            </button>
+                        </div>
+                    </a>
                 </div>
                 <div class="card">
-                    <div class="cont-img">
-                        <img src="img/img-2.jpg" alt="imagen actividad" title="imagen realizando una actividad"
-                            class="img-prom">
-                    </div>
-                    <div class="cont-info">
-                        <h3>Futbol femenino</h3>
-                        <p>
-                            Almost before we knew it.
-                        </p>
-                    </div>
+                    <a href="">
+                        <div class="cont-img">
+                            <img src="img/img-2.jpg" alt="imagen actividad" title="imagen realizando una actividad"
+                                class="img-prom">
+                        </div>
+                        <div class="cont-info">
+                            <h3>Futbol femenino</h3>
+                            <p>
+                                Deporte femenino con ligas profesionales en el ámbito
+                            </p>
+                        </div>
+                    </a>
                 </div>
                 <div class="card">
-                    <div class="cont-img">
-                        <img src="img/img-3.jpg" alt="imagen actividad" title="imagen realizando una actividad"
-                            class="img-prom">
-                    </div>
-                    <div class="cont-info">
-                        <h3>Beer pong</h3>
-                        <p>
-                            Almost before we knew it.
-                        </p>
-                    </div>
+                    <a href="">
+                        <div class="cont-img">
+                            <img src="img/img-3.jpg" alt="imagen actividad" title="imagen realizando una actividad"
+                                class="img-prom">
+                        </div>
+                        <div class="cont-info">
+                            <h3>Beer pong</h3>
+                            <p>
+                                Juego para divertirse con amigos un fin de semana.
+                            </p>
+                        </div>
+                    </a>
                 </div>
                 <div class="card">
-                    <div class="cont-img">
-                        <img src="img/img-4.jpg" alt="imagen actividad" title="imagen realizando una actividad"
-                            class="img-prom">
-                    </div>
-                    <div class="cont-info">
-                        <h3>Bandas de musica</h3>
-                        <p>
-                            Almost before we knew it.
-                        </p>
-                    </div>
+                    <a href="">
+                        <div class="cont-img">
+                            <img src="img/img-4.jpg" alt="imagen actividad" title="imagen realizando una actividad"
+                                class="img-prom">
+                        </div>
+                        <div class="cont-info">
+                            <h3>Bandas de musica</h3>
+                            <p>
+                                Reunite con personas que compartan el amor por la musica.
+                            </p>
+                        </div>
+                    </a>
                 </div>
                 <div class="card">
-                    <div class="cont-img">
-                        <img src="img/img-5.jpg" alt="imagen actividad" title="imagen realizando una actividad"
-                            class="img-prom">
-                    </div>
-                    <div class="cont-info">
-                        <h3>Campings</h3>
-                        <p>
-                            Almost before we knew it.
-                        </p>
-                    </div>
+                    <a href="">
+                        <div class="cont-img">
+                            <img src="img/img-5.jpg" alt="imagen actividad" title="imagen realizando una actividad"
+                                class="img-prom">
+                        </div>
+                        <div class="cont-info">
+                            <h3>Campings</h3>
+                            <p>
+                                Si no tenes ccon quien ir de campamento, unite a nosotros.
+                            </p>
+                        </div>
+                    </a>
                 </div>
                 <div class="card">
-                    <div class="cont-img">
-                        <img src="img/img-6.jpg" alt="imagen actividad" title="imagen realizando una actividad"
-                            class="img-prom">
-                    </div>
-                    <div class="cont-info">
-                        <h3>Airsoft</h3>
-                        <p>
-                            Almost before we knew it.
-                        </p>
-                    </div>
+                    <a href="">
+                        <div class="cont-img">
+                            <img src="img/img-6.jpg" alt="imagen actividad" title="imagen realizando una actividad"
+                                class="img-prom">
+                        </div>
+                        <div class="cont-info">
+                            <h3>Airsoft</h3>
+                            <p>
+                                Vivi una experiencia de adrenalina con nosotros.
+                            </p>
+                        </div>
+                    </a>
                 </div>
                 <div class="card">
-                    <div class="cont-img">
-                        <img src="img/img-7.jpg" alt="imagen actividad" title="imagen realizando una actividad"
-                            class="img-prom">
-                    </div>
-                    <div class="cont-info">
-                        <h3>Yoga</h3>
-                        <p>
-                            Almost before we knew it.
-                        </p>
-                    </div>
+                    <a href="">
+                        <div class="cont-img">
+                            <img src="img/img-7.jpg" alt="imagen actividad" title="imagen realizando una actividad"
+                                class="img-prom">
+                        </div>
+                        <div class="cont-info">
+                            <h3>Yoga</h3>
+                            <p>
+                                Compartimos un momento de relax.
+                            </p>
+                        </div>
+                    </a>
                 </div>
                 <div class="card">
-                    <div class="cont-img">
-                        <img src="img/img-8.jpg" alt="imagen actividad" title="imagen realizando una actividad"
-                            class="img-prom">
-                    </div>
-                    <div class="cont-info">
-                        <h3>Fiestas</h3>
-                        <p>
-                            Almost before we knew it.
-                        </p>
-                    </div>
+                    <a href="">
+                        <div class="cont-img">
+                            <img src="img/img-8.jpg" alt="imagen actividad" title="imagen realizando una actividad"
+                                class="img-prom">
+                        </div>
+                        <div class="cont-info">
+                            <h3>Fiestas</h3>
+                            <p>
+                                ¿Irse de fiesta solo? No, es mejorr ir acompañado.
+                            </p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
-
-        <div class="cont-text-act-gral">
-            <div class="cont-text-act">
-                <h2>Categorías de actividades</h2>
-                <p>Conocé gente nueva con quien compartan los mismos intereses. Crea tu cuenta en un solo paso.</p>
-            </div>
-        </div>
-
-        <section class="section-cards">
-            <div class="cont-cards">
-                <div class="card2">
-                    <div>
-                        <img src="logos/logo3.png" alt="Logo actividad" class="img-logo">
-                    </div>
-                    <div>
-                        <div class="car2-text">
-                            <h3>Deportes</h3>
-                            <p>Do what you love, The rest is history!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card2">
-                    <div>
-                        <img src="logos/logo4.png" alt="Logo actividad" class="img-logo">
-                    </div>
-                    <div>
-                        <div class="car2-text">
-                            <h3>Viajes</h3>
-                            <p>Do what you love,  The rest is history!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card2">
-                    <div>
-                        <img src="logos/logo2.png" alt="Logo actividad" class="img-logo">
-                    </div>
-                    <div>
-                        <div class="car2-text">
-                            <h3>Ocio</h3>
-                            <p>Do what you love,  The rest is history!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- VENTANA EMERGENTE LOGIN -->
-		<div class="fondoModal">
-			<div class="contenedorModal">
-				<div class="contenidoModal">
-					<!-- icon close -->
-					<span id="bot-cerrar-modal">
-						<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-							<path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-						</svg>
-					</span>
-
-					<form action="#" method="get" class="formLogin">
-						<!-- title -->
-						<h1 class="h1-login">Activizip</h1>
-						<div class="message-register">
-							<p class="p-login">¿Todavía no te has registrado? <a href="register.html" class="tag-a-login">¡Hazlo ahora!</a>
-							</p>
-						</div>
-
-						<!-- input email -->
-						<div class="cont-title-input">
-							<p>Correo electrónico</p>
-						</div>
-						<label for="GET-user"></label>
-						<input type="email" class="GET-user input-login" user="user" size="40" placeholder="Correo electronico">
-
-						<!-- input password -->
-						<div class="cont-title-input cont-password">
-							<p>Contraseña</p>
-							<a href="forgotPassword.html" class="recoverpassword tag-a-login">Olvidé la contraseña</a>
-						</div>
-						<label form="GET-password"></label>
-						<!-- icon to see password -->
-						<div class="cont-input-password">
-							<input type="password" id="inputPass" class="GET-password input-login" name="password" placeholder="Contraseña">
-
-							<!-- icons bootstrap -->
-							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-								id="btn-show-pass" class="show-hide-pass bi bi-eye" viewBox="0 0 16 16">
-								<path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
-								<path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
-							</svg>
-							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-								id="btn-hide-pass" class="show-hide-pass bi bi-eye-slash" viewBox="0 0 16 16">
-								<path d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7.028 7.028 0 0 0-2.79.588l.77.771A5.944 5.944 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.134 13.134 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755-.165.165-.337.328-.517.486l.708.709z" />
-								<path d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829l.822.822zm-2.943 1.299.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829z" />
-								<path d="M3.35 5.47c-.18.16-.353.322-.518.487A13.134 13.134 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7.029 7.029 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12-.708.708z" />
-							</svg>
-						</div>
-
-						<!-- keep the session -->
-						<div class="cont-session">
-							<input type="checkbox" class="GET-session input-login" name="session">
-							<label form="GET-session" class="texto-session">Mantener sesion abierta</label>
-						</div>
-
-						<!-- button send -->
-						<input type="button" value="Send" class="input-login-button">
-
-						<!-- error login -->
-						<div class="message-error-session">
-							<a href="error-sesion.html" class="tag-a-login">¿No puedes iniciar sesión?</a>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
+        <div id="TableList"></div>
+        <a href="javascript:prevPage()" id="btn_prev">Prev</a>&nbsp;
+        <a href="javascript:nextPage()" id="btn_next">Next</a><br>
+        page: <span id="page"></span>
     </main>
     <footer>
         <div>
@@ -296,9 +223,9 @@
     </footer>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/scrollNav.js"></script>
-    <script src="js/openLogin.js"></script>
-    <script src="js/showHiddenPass.js"></script>
     <script src="js/date.js"></script>
+    <script src="js/activity.js"></script>
+    <script src="js/pages.js"></script>
 </body>
 
 </html>

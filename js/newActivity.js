@@ -15,5 +15,4 @@ createButtton.addEventListener("click", function(e) {
     var cantPeople = document.getElementById("GET-cant-people").value;
     var price = document.getElementById("GET-price").value;
     var age = document.getElementById("GET-age").value;
-    var gender = document.getElementById("GET-gender").value;
 });

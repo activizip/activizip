@@ -108,6 +108,7 @@ footer>div>ul>li {
 }
 footer>div>ul>li>a{
     color: rgb(255, 255, 255);
+    cursor: pointer;
 }
 
 /*****************
@@ -137,7 +138,6 @@ footer>div>ul>li>a{
 /* CONTAINER GRAL FORM */
 form > .cont-gral{
     background: rgb(255, 255, 255);
-    box-shadow: 0 0 50px 2px rgb(219, 219, 219);
 }
 form {
     max-width: 500px;

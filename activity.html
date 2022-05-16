@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/activity.css">
+
+    <title>Activizip</title>
+</head>
+
+<body class="body-main">
+    <header>
+        <div class="cont-btn-header">
+            <button class="btn-header">
+                <a href="index.html">Home</a>
+            </button>
+        </div>
+    </header>
+    <main class="main">
+        <!-- CARD ACTIVITY -->
+        <div class="cont-activity">
+            <!-- img -->
+            <div class="cont-img">
+                <img src="img/img-1.jpg" width="960" height="640" />
+            </div>
+            <!-- text -->
+            <div class="cont-info">
+                <h3 id="activityName"></h3>
+                <!-- <h5 id="activityDescription"></h5> -->
+                <div class="cont-location">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-geo-alt-fill locationIcon2" viewBox="0 0 16 16">
+                        <path
+                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                    </svg>
+                    <p id="activityLocation"></p>
+                </div>
+                <div id="date">
+                    <div>
+                        <small id="activityDay"></small>
+                        <small id="activityMonth"></small>
+                        <small id="activityYear"></small>
+                    </div>
+                    <div>
+                        <small id="activityHour"></small>
+                    </div>
+                </div>
+                <div class="cont-people-age">
+                    <p id="activityPeople"></p>
+                    <p id="activityAge"></p>
+                </div>
+                <div class="cont-btn">
+                    <button class="btn-description">
+                        Más info
+                    </button>
+                    <button class="btn-price">
+                        <p id="activityPrice"></p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <ul>
+                <li><a href="#">©2022 Activizip •</a></li>
+                <li><a href="#">Politica de privacidad •</a></li>
+                <li><a href="#">Condiciones de uso •</a></li>
+                <li><a href="#">Cookies</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/activityIndividual.js"></script>
+</body>
+
+</html>

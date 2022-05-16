@@ -3,18 +3,11 @@
 .main-create-activity, .main-register, .body-main {
     padding: 0;
 }
-/* FORM */
+/* --------------------------- FORM ----------------------*/
 .cont-activity {
-    margin: 10px 0;
+    margin: 8px 0;
 }
-.option-gender {
-    display: flex;
-}
-.option-gender  > div {
-    align-self: end;
-    width: 100%;
-}
-#GET-gender, #GET-category {
+#GET-category {
     width: 100%;
     padding: 10px;
     color: rgb(78, 77, 77);
@@ -26,7 +19,7 @@
     grid-template-columns: 50% 50%;
 }
 
-/* date */
+/* ----------------------------- date -----------------------------*/
 .cont-input-date {
 	align-self: end;
 	display: grid;
@@ -49,7 +42,7 @@
 }
 
 /*-------------------------------------- INPUSTS FORM --------------------------------------*/
-.input-login, .input-date, .options, #GET-gender, #GET-category {
+.input-login, .input-date, .options, #GET-category {
 	width: 100%;
 	padding: 10px;
 	font-size: 1em;
@@ -57,7 +50,7 @@
 	border: 1px solid rgb(209, 218, 218);
 }
 
-.input-login::placeholder, .input-date::placeholder, .options::placeholder, #GET-gender::placeholder {
+.input-login::placeholder, .input-date::placeholder, .options::placeholder {
     font-size: 0.9em;
 	color: rgb(78, 77, 77);
 }
@@ -76,11 +69,11 @@
     border: 1px solid rgb(209, 218, 218);
 }
 
-.input-login:hover, .input-date:hover, .options:hover, #GET-gender:hover, #GET-category:hover, #datePickerId:hover, #hourPickerId:hover {
+.input-login:hover, .input-date:hover, .options:hover, #GET-category:hover, #datePickerId:hover, #hourPickerId:hover {
 	border: 1px solid rgba(165, 184, 195, 0.986);
 }
 
-.input-login:focus, .input-date:focus,  #GET-gender:focus, #GET-category:focus, #datePickerId:focus, #hourPickerId:focus {
+.input-login:focus, .input-date:focus, #GET-category:focus, #datePickerId:focus, #hourPickerId:focus {
 	border: 1px solid rgba(3, 10, 64, 0.617);
 	outline: none;
 }

@@ -6,26 +6,26 @@ var actividad = {
     anio: 2022,
     hora: "14:00",
     precio: 10,
-    maximoParticipantes: 4,
-    rangoEdades: "25/35",
-    genero: "Sin preferencia"
+    maximoParticipantes: "3/4",
+    rangoEdades: "25 a 35",
+    description: "Actividad por casa de campo el punto de encuentro es en el lago"
 }
 
-$.getJSON('http://localhost:8080/activities/1', function(data) {
-        console.log(data)
+// $.getJSON('http://localhost:8080/activities/2', function(data) {
+        // console.log(data)
         // document.getElementById("activityName").innerHTML = "Nombre de actividad: " + data.name; Solo anda con la bbdd prendida?
-    });
+    // });
 
 document.getElementById("activityName").innerHTML = actividad.nombre;
-document.getElementById("activityUbication").innerHTML = actividad.ubicacion;
+document.getElementById("activityLocation").innerHTML = actividad.ubicacion;
 document.getElementById("activityDay").innerHTML = actividad.dia + "·";
 document.getElementById("activityMonth").innerHTML = actividad.mes  + "·";
 document.getElementById("activityYear").innerHTML = actividad.anio;
 document.getElementById("activityHour").innerHTML = actividad.hora + "hs";
-document.getElementById("activityPrice").innerHTML = "Precio: " + actividad.precio;
-document.getElementById("activityPeople").innerHTML = "Participantes max: " + actividad.maximoParticipantes;
-document.getElementById("activityAge").innerHTML = "Edad entre: " + actividad.rangoEdades;
-document.getElementById("activityGender").innerHTML = "Genero: " + actividad.genero;
+document.getElementById("activityPrice").innerHTML = "Apuntarse €" + actividad.precio;
+document.getElementById("activityPeople").innerHTML = "Apuntados: " + actividad.maximoParticipantes;
+document.getElementById("activityAge").innerHTML = "Edad: " + actividad.rangoEdades;
+document.getElementById("activityDescription").innerHTML = actividad.description;
 
 console.log("OBJETO: Actividad:" + actividad.nombre + 
 " Día: " + actividad.dia + 

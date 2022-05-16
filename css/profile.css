@@ -1,0 +1,133 @@
+/* ---------------------------- GRAL ---------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ---------------------------- BODY ---------------------------- */
+body {
+    display: grid;
+    grid-template-rows: 5% 90% 5%;
+    min-height: 100vh;
+}
+
+/* ---------------------------- HEADER ---------------------------- */
+header {
+    width: 100%;
+    background: rgb(3, 10, 64, 1);
+}
+
+.cont-btn-header {
+    display: contents;
+}
+
+.btn-header {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: rgb(3, 10, 64, 1);
+    border-right: 1px solid rgba(200, 200, 200, 0.814);
+}
+
+.btn-header>a {
+    color: whitesmoke;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+/* ---------------------------- MAIN ---------------------------- */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------------------------- CARD ACTIVITY GRAL ---------------------------- */
+.cont-activity {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255);
+    box-shadow: 0 10px 30px rgba(113, 113, 113, 0.18);
+    max-width: 650px;
+}
+
+/* ---------------------------- CARD IMG ---------------------------- */
+.cont-img {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 3px;
+    background-color: white;
+    padding: 20px;
+}
+
+img {
+    width:200px;
+    height:200px;
+    border-radius:150px;
+    object-fit: cover;
+}
+
+/* ---------------------------- CARD TEXT ---------------------------- */
+/* title */
+.cont-info>h3 {
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: rgb(20, 0, 87);
+}
+
+/* ------------------------------- text ------------------------------- */
+.cont-info>p {
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(109, 109, 109);
+}
+
+/* ------------------------------- description -------------------------------*/
+#activityDescription {
+    width: 90%;
+} 
+
+/* ------------------------------- btn euro ------------------------------- */
+.cont-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-price {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8%;
+    color: white;
+    background: rgb(2, 151, 24);
+}
+
+/* -------------------------- FOOTER -------------------------- */
+footer {
+    background: rgb(3, 10, 64, 1);
+}
+
+footer>div {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+}
+
+footer>div>ul {
+    display: flex;
+    color: antiquewhite;
+}
+footer>div>ul>li>a {
+    color: aliceblue;
+}
