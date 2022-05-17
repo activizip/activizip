@@ -16,7 +16,7 @@ var obj = [
     { number: "15" }
 ];
 var current_page = 1;
-var obj_per_page = 3;
+var obj_per_page = 1;
 function totNumPages() {
     return Math.ceil(obj.length / obj_per_page);
 }

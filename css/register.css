@@ -24,9 +24,9 @@
 }
 
 /* contenedor texto de correo */
-.cont-title-input {
-	margin-top: 25px;
-	margin-bottom: 10px;
+.input-login{
+	margin-top: 5px;
+	margin-bottom: 15px;
 }
 
 /* contenedor password */
@@ -34,7 +34,6 @@
 	display: flex;
 	justify-content: space-between;
 }
-
 .cont-password>a {
 	align-self: flex-end;
 	font-size: 0.8em;
@@ -48,7 +47,7 @@
 
 .show-hide-pass {
 	position: absolute;
-	top: 50%;
+	top: 43%;
 	right: 12px;
 	transform: translateY(-50%);
 	color: #058d92e4;

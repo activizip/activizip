@@ -95,15 +95,24 @@ img {
     align-content: center;
 }
 
-/*----------------------- Date -----------------------*/
-.cont-info {
-    text-align: -webkit-center;
+/* ------------------------------ cont gral items ------------------------------ */
+.cont-items {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+}
+.cont-left {
+    display: flex;
+    justify-content: end;
 }
 
-.cont-info>#date {
+.cont-right {
     display: flex;
-    justify-content: space-around;
-    width: 68%;
+    justify-content: start;
+}
+/* ---------------------------- Date ---------------------------- */
+.cont-info {
+    text-align: -webkit-center;
 }
 
 .cont-info>#date>div {
@@ -113,34 +122,25 @@ img {
     color: rgb(109, 109, 109);
 }
 
-/* -------------------- people age ---------------- */
-.cont-people-age {
-    display: flex;
-    justify-content: space-around;
-}
-.cont-info>div>p {
+/* ---------------------------- people age ---------------------------- */
+.cont-info>div>div>p {
     line-height: 30px;
     font-weight: 400;
     text-align: center;
     color: rgb(109, 109, 109);
 }
-/* ----------------------- description */
+
+/* ---------------------------- description ----------------------------*/
 #activityDescription {
     width: 90%;
 } 
 
-/* ---------------------------- btn euro ---------------------------- */
-.cont-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.cont-btn > button:first-child {
-    margin-right: 10px;
-}
+/* ---------------------------- button price/description ---------------------------- */
 .btn-price, .btn-description  {
     display: flex;
+    justify-content: center;
     align-items: center;
+    width: 100%;
     padding: 8px;
     cursor: pointer;
     border: none;
@@ -149,10 +149,13 @@ img {
     color: rgb(229, 229, 229);
     background-color: rgb(105, 156, 4);
 }
+
+/* ---------------------------- button description ---------------------------- */
 .btn-description {
     background: rgb(3, 10, 64, 1);
 }
-/* -------------------------- FOOTER -------------------------- */
+
+/* ---------------------------- FOOTER ---------------------------- */
 footer {
     background: rgb(3, 10, 64, 1);
 }
