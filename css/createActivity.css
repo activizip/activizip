@@ -56,49 +56,41 @@
 }
 
 /* hour */
-#datePickerId, #hourPickerId {
+#hourPickerId {
     padding: 9px;
     font-size: 1em;
-    border: none;
     color: rgb(78, 77, 77);
-    background: url(../img/clock.jpg) no-repeat;
     /*agrego otro icono*/
+    background: url(../img/clock.jpg) no-repeat;
     background-size: 20px;
     background-position: 90%;
     border-radius: 5px;
     border: 1px solid rgb(209, 218, 218);
 }
 
-.input-login:hover, .input-date:hover, .options:hover, #GET-category:hover, #datePickerId:hover, #hourPickerId:hover {
+#datePickerId {
+    padding: 9px;
+    font-size: 1em;
+    color: rgb(78, 77, 77);
+    /*agrego otro icono*/
+    background: url(../img/icon-calendary.png) no-repeat;
+    background-size: 20px;
+    background-position: 90%;
+    border-radius: 5px;
+    border: 1px solid rgb(229, 229, 229);
+}
+
+.input-login:hover, .input-date:hover, .options:hover, #GET-category:hover, #hourPickerId:hover, #datePickerId:hover {
 	border: 1px solid rgba(165, 184, 195, 0.986);
 }
 
-.input-login:focus, .input-date:focus, #GET-category:focus, #datePickerId:focus, #hourPickerId:focus {
+.input-login:focus, .input-date:focus, #GET-category:focus, #hourPickerId:focus, #datePickerId:focus {
 	border: 1px solid rgba(3, 10, 64, 0.617);
 	outline: none;
 }
 
-#datePickerId {
-    padding: 9px;
-    font-size: 1em;
-    border: none;
-    color: rgb(78, 77, 77);
-    background: url(../img/icon-calendary.png) no-repeat;
-    /*agrego otro icono*/
-    background-size: 20px;
-    background-position: 90%;
-    border: 1px solid rgb(229, 229, 229);
-}
-#datePickerId:hover {
-    border: 1px solid rgba(165, 184, 195, 0.986);
-}
-#datePickerId:focus {
-    border: 1px 0px 1px 0px solid rgba(90, 90, 89, 0.617);
-    outline: none;
-}
 /* icon calendar | oculto el icono por defecto*/
 ::-webkit-calendar-picker-indicator {
-	
     cursor: pointer;
     opacity: 0;
 }

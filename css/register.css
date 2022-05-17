@@ -57,6 +57,45 @@
 	display: none;
 }
 
+
+/* ----------------------------- date -----------------------------*/
+.cont-input-date {
+	align-self: end;
+	display: grid;
+}
+.cont-input-date:first-child {
+	margin-right: 10px;
+}
+
+.input-date {
+    width: 100%;
+    padding: 10px;
+}
+
+#datePickerId {
+    padding: 9px;
+    font-size: 1em;
+    color: rgb(78, 77, 77);
+    /*agrego otro icono*/
+    background: url(../img/icon-calendary.png) no-repeat;
+    background-size: 20px;
+    background-position: 98%;
+    border-radius: 5px;
+    border: 1px solid rgb(229, 229, 229);
+}
+#datePickerId:hover {
+	border: 1px solid rgba(165, 184, 195, 0.986);
+}
+#datePickerId:focus {
+	border: 1px solid rgba(3, 10, 64, 0.617);
+	outline: none;
+}
+/* icon calendar | oculto el icono por defecto*/
+::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    opacity: 0;
+}
+
 /************************* 
 ** ESTILOS BOTON ENVIAR **
 **************************/

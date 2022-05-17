@@ -11,7 +11,7 @@ var actividad = {
     description: "Actividad por casa de campo el punto de encuentro es en el lago"
 }
 
-// $.getJSON('http://localhost:8080/activities/2', function(data) {
+// $.getJSON('http://localhost:8080/activity/1', function(data) {
 // console.log(data)
 // document.getElementById("activityName").innerHTML = "Nombre de actividad: " + data.name; Solo anda con la bbdd prendida?
 // });

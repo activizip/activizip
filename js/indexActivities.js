@@ -10,7 +10,7 @@ var actividad = {
     rangoEdades: "25 a 35"
 }
 
-$.getJSON('http://localhost:8080/activities/1', function (data) {
+$.getJSON('http://localhost:8080/index/1', function (data) {
     console.log(data)
     // document.getElementById("activityName").innerHTML = "Nombre de actividad: " + data.name; Solo anda con la bbdd prendida?
 });
@@ -21,12 +21,6 @@ document.getElementById("activityDay").innerHTML = actividad.dia + "·";
 document.getElementById("activityMonth").innerHTML = actividad.mes + "·";
 document.getElementById("activityYear").innerHTML = actividad.anio;
 document.getElementById("activityHour").innerHTML = actividad.hora + "hs";
-document.getElementById("activityPrice").innerHTML = "Apuntarse €" + actividad.precio;
+document.getElementById("activityPrice").innerHTML = actividad.precio;
 document.getElementById("activityPeople").innerHTML = "Participantes max: " + actividad.maximoParticipantes;
 document.getElementById("activityAge").innerHTML = "Edad: " + actividad.rangoEdades;
-
-console.log("OBJETO: Actividad:" + actividad.nombre +
-    " Día: " + actividad.dia +
-    " Mes: " + actividad.mes +
-    " Año: " + actividad.anio +
-    " Hora: " + actividad.hora);
