@@ -6,8 +6,7 @@ var actividad = {
     anio: 2022,
     hora: "14:00",
     precio: "Gratis",
-    maximoParticipantes: 4,
-    rangoEdades: "25 a 35"
+    maximoParticipantes: 4
 }
 
 $.getJSON('http://localhost:8080/index/1', function (data) {
@@ -23,4 +22,3 @@ document.getElementById("activityYear").innerHTML = actividad.anio;
 document.getElementById("activityHour").innerHTML = actividad.hora + "hs";
 document.getElementById("activityPrice").innerHTML = actividad.precio;
 document.getElementById("activityPeople").innerHTML = "Participantes max: " + actividad.maximoParticipantes;
-document.getElementById("activityAge").innerHTML = "Edad: " + actividad.rangoEdades;

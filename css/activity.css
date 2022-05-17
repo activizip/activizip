@@ -95,6 +95,13 @@ img {
     align-content: center;
 }
 
+.cont-info>div>p {
+    align-items: center;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(109, 109, 109);
+}
 /* ------------------------------ cont gral items ------------------------------ */
 .cont-items {
     display: grid;
@@ -114,7 +121,9 @@ img {
 .cont-info {
     text-align: -webkit-center;
 }
-
+#date{
+    margin-bottom: 10px;
+}
 .cont-info>#date>div {
     display: flex;
     text-transform: uppercase;
@@ -122,13 +131,6 @@ img {
     color: rgb(109, 109, 109);
 }
 
-/* ---------------------------- people age ---------------------------- */
-.cont-info>div>div>p {
-    line-height: 30px;
-    font-weight: 400;
-    text-align: center;
-    color: rgb(109, 109, 109);
-}
 
 /* ---------------------------- description ----------------------------*/
 #activityDescription {
@@ -136,6 +138,11 @@ img {
 } 
 
 /* ---------------------------- button price/description ---------------------------- */
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
 .btn-price, .btn-description  {
     display: flex;
     justify-content: center;

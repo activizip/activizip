@@ -94,6 +94,7 @@
 
 /* ICONO PARA MOSTRAR U OCULTAR EL PASSWORD */
 .cont-input-password {
+	margin-bottom: 20px;
 	position: relative;
 }
 
@@ -107,27 +108,6 @@
 
 .bi-eye-slash {
 	display: none;
-}
-
-/* contenedor session abierta */
-.cont-session {
-	display: grid;
-	grid-template-columns: 13px auto;
-	margin-top: 35px;
-	margin-bottom: 10px;
-	font-size: 0.8em;
-	font-weight: bold;
-	color: rgb(3, 10, 64, 1);
-}
-
-.cont-session > .GET-session {
-	width: 100%;
-	align-self: center;
-	/* hago que el checkbox este centrado en su contenedor */
-}
-
-.texto-session {
-	margin-left: 5px;
 }
 
 /************************* 

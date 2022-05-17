@@ -7,8 +7,7 @@ var actividad = {
     hora: "14:00",
     precio: 10,
     maximoParticipantes: "3/4",
-    rangoEdades: "25 a 35",
-    description: "Actividad por casa de campo el punto de encuentro es en el lago"
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. At velit laborum accusamus saepe a sequi dignissimos consequuntur nemo vel doloribus, iusto, aspernatur quaerat molestiae! Harum, porro nemo in, laudantium tempore omnis aliquam ipsa itaque, quos ipsam odit sit nisi perspiciatis"
 }
 
 // $.getJSON('http://localhost:8080/activity/1', function(data) {
@@ -24,11 +23,4 @@ document.getElementById("activityYear").innerHTML = actividad.anio;
 document.getElementById("activityHour").innerHTML = actividad.hora + "hs";
 document.getElementById("activityPrice").innerHTML = "Apuntarse €" + actividad.precio;
 document.getElementById("activityPeople").innerHTML = "Apuntados: " + actividad.maximoParticipantes;
-document.getElementById("activityAge").innerHTML = "Edad: " + actividad.rangoEdades;
 document.getElementById("activityDescription").innerHTML = actividad.description;
-
-console.log("OBJETO: Actividad:" + actividad.nombre +
-    " Día: " + actividad.dia +
-    " Mes: " + actividad.mes +
-    " Año: " + actividad.anio +
-    " Hora: " + actividad.hora);

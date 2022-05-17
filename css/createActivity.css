@@ -33,11 +33,11 @@
     padding: 10px;
 }
 
-.cont-price-age {
+.cont-gral-activity {
     display: grid;
     grid-template-columns: 50% 50%;
 }
-.cont-price-age > div:first-child {
+.cont-gral-activity > div:first-child {
     margin-right: 10px;
 }
 
