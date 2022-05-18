@@ -1,12 +1,19 @@
-var actividad = {
-    email: "lauragisellesilva@gmail.com",
-    password: "Madrid19"
-}
-
-document.getElementById("GET-email").innerHTML = actividad.email;
-document.getElementById("GET-password").innerHTML = actividad.password;
-
-// $.getJSON('http://localhost:8080/login/1', function (data) {
-//     console.log(data)
-//     document.getElementById("activityName").innerHTML = "Nombre de actividad: " + data.name;
-// });
+document.getElementById('btnSend').addEventListener("click", function(event) {
+    var login = {
+        "email": document.getElementById("GET-email").value,
+        "password": document.getElementById("GET-password").value
+    }
+    $.ajax({
+        url: 'http://localhost:8080/users/login',
+        type: 'post',
+        data: login,
+        headers: { 
+            'Accept': 'application/json',
+            'Content-Type': 'application/json' 
+        },
+        dataType: 'json',
+        success: function (response) {
+            console.log(response);
+        }
+    });
+});

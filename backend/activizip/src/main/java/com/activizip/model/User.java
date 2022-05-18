@@ -16,18 +16,14 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @Builder
 @Entity
-public class Activity {
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
-    private String description;
-    private String location;
-    private LocalDate date;
-    private String time;
-    private Double price;
-    private Integer maxParticipants;
-    private String creator;
-
+    private String lastNames;
+    private String email;
+    private String password;
+    private LocalDate birthdate;
 }

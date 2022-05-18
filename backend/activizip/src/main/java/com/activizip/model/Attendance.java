@@ -9,25 +9,18 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import java.time.LocalDate;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 @Entity
-public class Activity {
+public class Attendance {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String name;
-    private String description;
-    private String location;
-    private LocalDate date;
-    private String time;
-    private Double price;
-    private Integer maxParticipants;
-    private String creator;
+    private Long activityId;
+    private Long userId;
 
 }
