@@ -12,15 +12,15 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @Builder
 public class ActivityResponseDTO {
-
     private Long id;
     private String name;
-    private String description;
-    private String location;
-    private LocalDate date;
+    private Integer day;
+    private Integer month;
+    private Integer year;
     private String time;
-    private Double price;
+    private String location;
     private Integer maxParticipants;
+    private Double price;
+    private String description;
     private Integer registered;
-
 }

@@ -21,11 +21,7 @@
                 </div>
                 <div>
                     <!-- botones -->
-                    <ul>
-                        <li><a href="register.html">Register</a></li>
-                        <li><a href="login.html">Login</a></li>
-                        <li><a href="create.html">Create</a></li>
-                        <li><a href="profile.html">Profile</a></li>
+                    <ul id="loginNavBar">
                     </ul>
                 </div>
             </nav>
@@ -38,22 +34,10 @@
                         <path
                             d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                     </svg>
-                    <input type="search" name="busqueda" placeholder="Actividad" class="input-search">
-                </div>
-                <!-- <div class="cont-input cont-input-search">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                        class="bi bi-geo-alt-fill locationIcon1" viewBox="0 0 16 16">
-                        <path
-                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                    </svg>
-                    <input type="search" name="busqueda" placeholder="Ciudad" class="input-search">
+                    <input type="text" name="busqueda" placeholder="Actividad" class="input-search" id="inputSearch">
                 </div>
                 <div class="cont-input">
-                    <input id="datePickerId" type="date" name="date">
-                    <span class="validity"></span>
-                </div> -->
-                <div class="cont-input">
-                    <input type="submit" value="Buscar" class="btn-search">
+                    <input type="button" value="Buscar" class="btn-search" id="btnSearch">
                 </div>
             </form>
         </div>
@@ -73,144 +57,8 @@
         </header>
 
         <section class="section-cards">
-            <div class="cont-cards">
-                <div class="card">
-                    <a href="activity.html">
-                        <div class="cont-img">
-                            <img src="img/img-1.jpg" alt="imagen actividad" title="imagen realizando una actividad"
-                                class="img-prom">
-                        </div>
-                        <div class="cont-info">
-                            <h3 id="activityName"></h3>
-                            <div class="cont-location">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-geo-alt-fill locationIcon2" viewBox="0 0 16 16">
-                                    <path
-                                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                                </svg>
-                                <p id="activityLocation"></p>
-                            </div>
-                            <div id="date">
-                                <div>
-                                    <p id="activityDay"></p>
-                                    <p id="activityMonth"></p>
-                                    <p id="activityYear"></p>
-                                </div>
-                                <div>
-                                    <p id="activityHour"></p>
-                                </div>
-                            </div>
-                            <p id="activityPeople"></p>
-                            <button class="btn-price">
-                                <p id="activityPrice"></p>
-                            </button>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="">
-                        <div class="cont-img">
-                            <img src="img/img-2.jpg" alt="imagen actividad" title="imagen realizando una actividad"
-                                class="img-prom">
-                        </div>
-                        <div class="cont-info">
-                            <h3>Futbol femenino</h3>
-                            <p>
-                                Deporte femenino con ligas profesionales en el ámbito
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="">
-                        <div class="cont-img">
-                            <img src="img/img-3.jpg" alt="imagen actividad" title="imagen realizando una actividad"
-                                class="img-prom">
-                        </div>
-                        <div class="cont-info">
-                            <h3>Beer pong</h3>
-                            <p>
-                                Juego para divertirse con amigos un fin de semana.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="">
-                        <div class="cont-img">
-                            <img src="img/img-4.jpg" alt="imagen actividad" title="imagen realizando una actividad"
-                                class="img-prom">
-                        </div>
-                        <div class="cont-info">
-                            <h3>Bandas de musica</h3>
-                            <p>
-                                Reunite con personas que compartan el amor por la musica.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="">
-                        <div class="cont-img">
-                            <img src="img/img-5.jpg" alt="imagen actividad" title="imagen realizando una actividad"
-                                class="img-prom">
-                        </div>
-                        <div class="cont-info">
-                            <h3>Campings</h3>
-                            <p>
-                                Si no tenes ccon quien ir de campamento, unite a nosotros.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="">
-                        <div class="cont-img">
-                            <img src="img/img-6.jpg" alt="imagen actividad" title="imagen realizando una actividad"
-                                class="img-prom">
-                        </div>
-                        <div class="cont-info">
-                            <h3>Airsoft</h3>
-                            <p>
-                                Vivi una experiencia de adrenalina con nosotros.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="">
-                        <div class="cont-img">
-                            <img src="img/img-7.jpg" alt="imagen actividad" title="imagen realizando una actividad"
-                                class="img-prom">
-                        </div>
-                        <div class="cont-info">
-                            <h3>Yoga</h3>
-                            <p>
-                                Compartimos un momento de relax.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="">
-                        <div class="cont-img">
-                            <img src="img/img-8.jpg" alt="imagen actividad" title="imagen realizando una actividad"
-                                class="img-prom">
-                        </div>
-                        <div class="cont-info">
-                            <h3>Fiestas</h3>
-                            <p>
-                                ¿Irse de fiesta solo? No, es mejorr ir acompañado.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
+            <div class="cont-cards" id="activitiesScreen"></div>
         </section>
-        <div id="TableList"></div>
-        <a href="javascript:prevPage()" id="btn_prev">Prev</a>&nbsp;
-        <a href="javascript:nextPage()" id="btn_next">Next</a><br>
-        page: <span id="page"></span>
     </main>
     <footer>
         <div>
@@ -224,9 +72,9 @@
     </footer>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/scrollNav.js"></script>
-    <script src="js/date.js"></script>
     <script src="js/indexActivities.js"></script>
     <script src="js/pages.js"></script>
+    <script src="js/loginNavButtons.js"></script>
 </body>
 
 </html>

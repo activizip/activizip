@@ -35,6 +35,6 @@ public class AttendanceService {
                 .userId(userId)
                 .activityId(activityId)
                 .build());
-        return "Registration successfully";
+        return "OK";
     }
 }

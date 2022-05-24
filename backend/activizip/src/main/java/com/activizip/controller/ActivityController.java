@@ -2,8 +2,10 @@ package com.activizip.controller;
 
 import com.activizip.model.dto.ActivityRequestDTO;
 import com.activizip.model.dto.ActivityResponseDTO;
+import com.activizip.model.dto.ResponseDTO;
 import com.activizip.service.ActivityService;
 import lombok.AllArgsConstructor;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
+@CrossOrigin
 @AllArgsConstructor
 @RequestMapping("/activities")
 public class ActivityController {
@@ -37,8 +40,8 @@ public class ActivityController {
     }
 
     @PostMapping
-    public String newActivity(@RequestBody ActivityRequestDTO request) {
-        return activityService.createActivity(request);
+    public ResponseDTO newActivity(@RequestBody ActivityRequestDTO request) {
+        return ResponseDTO.builder().response(activityService.createActivity(request)).build();
     }
 
 }

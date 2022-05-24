@@ -55,7 +55,7 @@ public class UserService {
                 .lastNames(request.getLastNames())
                 .email(request.getEmail())
                 .password(encrypt(request.getPassword()))
-                .birthdate(LocalDate.of(request.getYear(), request.getMonth(), request.getDay()))
+                .birthdate(request.getBirthDate())
                 .build());
         return "OK";
     }

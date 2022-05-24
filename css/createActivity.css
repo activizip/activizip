@@ -55,6 +55,7 @@
 	color: rgb(78, 77, 77);
 }
 
+
 /* hour */
 #hourPickerId {
     padding: 9px;
@@ -68,6 +69,7 @@
     border: 1px solid rgb(209, 218, 218);
 }
 
+/* date */
 #datePickerId {
     padding: 9px;
     font-size: 1em;
@@ -79,7 +81,6 @@
     border-radius: 5px;
     border: 1px solid rgb(229, 229, 229);
 }
-
 .input-login:hover, .input-date:hover, .options:hover, #GET-category:hover, #hourPickerId:hover, #datePickerId:hover {
 	border: 1px solid rgba(165, 184, 195, 0.986);
 }
@@ -104,7 +105,7 @@
 	font-size: 0.9em;
 }
 /*-------------------------- ESTILOS BOTON ENVIAR --------------------------*/
-#input-create-button {
+#btnSend {
 	padding: 5px;
 	width: 100%;
 	font-size: 1em;
