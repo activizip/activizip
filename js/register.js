@@ -3,7 +3,7 @@ document.getElementById('btnSend').addEventListener("click", function(event) {
         "name": document.getElementById("GET-name").value,
         "lastNames": document.getElementById("GET-lastname").value,
         "email": document.getElementById("GET-email").value,
-        "password": document.getElementById("inputPass").value,
+        "password": document.getElementById("GET-password").value,
         "birthDate": document.getElementById("datePickerId").value
     }
     $.ajax({
