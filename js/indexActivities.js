@@ -40,6 +40,9 @@ function openActivity(id) {
 }
 
 function createActivityCard(activity) {
+    var joined = activity.maxParticipants != null ? 
+    activity.registered+"/"+activity.maxParticipants 
+    : activity.registered+" (sin límite)";
     return "<div class=\"card\">" +
         "<a onClick=\"openActivity(" + activity.id + ")\">" +
         "<div class=\"cont-img\">" +
@@ -63,7 +66,7 @@ function createActivityCard(activity) {
         "<p id=\"activityHour\">" + activity.time + "</p>" +
         "</div>" +
         "</div>" +
-        "<p id=\"activityPeople\">" + activity.registered+"/"+activity.maxParticipants + "</p>" +
+        "<p id=\"activityPeople\"> Asistentes: " + joined + "</p>" +
         "<button class=\"btn-price\">" +
         "<p id=\"activityPrice\"> €" + activity.price + "</p>" +
         "</button>" +

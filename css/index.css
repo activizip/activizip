@@ -25,7 +25,8 @@ a {
 
 /*-------------------------------------- NAV --------------------------------------*/
 /* container gral nav */
-.header-nav>div:first-child {
+.header-nav>.cont-nav {
+    z-index: 1;
     display: flex;
     align-items: center;
     position: fixed;
@@ -35,30 +36,22 @@ a {
     transition: all 150ms;
 }
 
-/* nav with scroll */
-.header-nav>.cont-nav.retractil {
-    background: black;
-    transition: all 150ms;
-    z-index: 1;
-}
-
 /* nav */
 .header-nav>div>nav {
+    background: black;
     display: flex;
     justify-content: space-between;
     width: 100%;
     cursor: pointer;
-    z-index: 1;
 }
 
 /* container logo */
 .header-nav>div>nav>.logo {
     display: flex;
     align-items: center;
-    margin-left: 10px;
     padding: 0 10px;
-    border-radius: 0 0 10px 10px;
     background: black;
+    border-right: 0.1em solid rgb(143, 143, 143);
 }
 
 .header-nav>div>nav>.logo>a {
@@ -79,8 +72,7 @@ a {
 .header-nav>div>nav>div>ul>li {
     background: black;
     padding: 15px;
-    margin-right: 10px;
-    border-radius: 0 0 10px 10px;
+    border-left: 0.1em solid rgb(143, 143, 143);
 }
 
 .header-nav>div>nav>div>ul>li:last-child {

@@ -27,7 +27,7 @@ public class ActivityService {
     private UserRepository userRepository;
 
     public List<ActivityResponseDTO> getAllActivities() {
-        return activityRepository.findByDateGreaterThan(LocalDate.now()).stream()
+        return activityRepository.findByDateGreaterThan(LocalDate.now().minusDays(1)).stream()
                 .map(this::createActivityResponseDTO)
                 .collect(Collectors.toList());
     }
