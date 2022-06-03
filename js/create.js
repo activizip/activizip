@@ -1,10 +1,10 @@
 document.getElementById('btnSend').addEventListener("click", function(event) {
     var create = {
         "name": document.getElementById("GET-name").value,
-        "day": datePickerId.valueAsDate.getDate(),
-        "month": datePickerId.valueAsDate.getMonth()+1,
-        "year": datePickerId.valueAsDate.getFullYear(),
-        "time": hourPickerId.value, 
+        "day": GETdate.valueAsDate.getDate(),
+        "month": GETdate.valueAsDate.getMonth()+1,
+        "year": GETdate.valueAsDate.getFullYear(),
+        "time": GEThour.value, 
         "location": document.getElementById("GET-location").value,
         "maxParticipants": document.getElementById("GET-cant-people").value,
         "price": document.getElementById("GET-price").value,

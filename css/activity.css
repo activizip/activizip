@@ -21,23 +21,18 @@ header {
     background: rgb(3, 10, 64, 1);
 }
 
+/*------------------------------ logo ------------------------------*/
 .cont-btn-header {
     display: contents;
 }
-
-.btn-header {
-    height: 100%;
-    justify-content: center;
+.cont-btn-header>.logo {
+    display: flex;
     align-items: center;
-    border: none;
-    background: rgb(3, 10, 64, 1);
-    border-right: 1px solid rgba(200, 200, 200, 0.814);
+    max-width: 150px;
+    margin: 5px;
 }
-
-.btn-header>a {
-    color: whitesmoke;
-    font-size: 18px;
-    margin: 0 10px;
+#logoActivizip {
+    width: 100%;
 }
 
 /* ---------------------------- MAIN ---------------------------- */
@@ -71,7 +66,6 @@ img {
 }
 
 /* ---------------------------- CARD TEXT ---------------------------- */
-
 /* title */
 .cont-info>h3 {
     padding: 10px 0 3px;
@@ -117,6 +111,7 @@ img {
     display: flex;
     justify-content: start;
 }
+
 /* ---------------------------- Date ---------------------------- */
 .cont-info {
     text-align: -webkit-center;
@@ -131,11 +126,16 @@ img {
     color: rgb(109, 109, 109);
 }
 
-
 /* ---------------------------- description ----------------------------*/
 #activityDescription {
     width: 90%;
 } 
+
+/*  */
+#activityPeople {
+    color: rgb(55, 54, 54);
+    font-weight: bold;
+}
 
 /* ---------------------------- button price/description ---------------------------- */
 .buttons {

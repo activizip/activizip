@@ -1,5 +1,5 @@
 /********************** 
-** ESTILOS GENERALES **
+** GRAL STYLE **
 ***********************/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Mulish:ital,wght@1,300&display=swap');
 * {
@@ -11,8 +11,7 @@
 }
 
 body {
-    position: relative; /*esto puede dar problemas | puedo utilizar flex en toco caso: https://www.youtube.com/watch?v=PSD5pFi6bx4*/
-    
+    position: relative;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -34,9 +33,7 @@ a {
     text-decoration: none;
 }
 
-/******************* 
-** ESTILOS HEADER **
-********************/
+/*---------------------------------- HEADER STYLE ----------------------------------*/
 header {
     display: flex;
     position: fixed;
@@ -44,7 +41,7 @@ header {
     right: 0;
     background: rgb(3, 10, 64, 1);
 }
-/* botones para acceder al login y registrarse */
+/* buttons to access the login and register */
 .cont-btn-header {
     display: flex;
 }
@@ -52,28 +49,26 @@ header {
     display: flex;
     align-items: center;
     padding: 15px;
-    background: rgb(3, 10, 64, 1);
-    border: none;
-    border-radius: 0;
     font-size: 1em;
     cursor: pointer;
+    border: none;
+    border-radius: 0;
     border-right: 1px solid white;
+    color: white;
+    background: rgb(3, 10, 64, 1);
 }
 .btn-header:hover {
     background-color: #120331;
 }
-.btn-header > a {
-    color: white;
-}
 
-/* icon button header */
+/*---------------------------------- ICON BUTTON HEADER ----------------------------------*/
 .bi-person {
     align-items: center;
     justify-content: center;
     margin-right: 5px;
 }
 
-/* boton para registrarse */
+/*---------------------------------- REGISTER BUTTON ----------------------------------*/
 .cont-button-send {
     margin: 20px 0;
 }
@@ -82,9 +77,7 @@ header {
     border: none;
 }
 
-/******************* 
-** ESTILOS FOOTER **
-********************/
+/*---------------------------------- FOOTER STYLE----------------------------------*/
 footer {
     display: flex;
     justify-content: center;
@@ -110,10 +103,11 @@ footer>div>ul>li>a{
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
+.line {
+	color: #fff;
+}
 
-/*****************
-** MEDIA QUERYS **
-******************/
+/*------------------------------ MEDIA QUERYS ------------------------------*/
 @media (max-width: 650px) {
     form {
         max-width: 90%;
@@ -132,6 +126,10 @@ footer>div>ul>li>a{
     footer>div>ul>li {
         display: flex;
         align-content: center;
+    }
+    /* line footer */
+    .line {
+        display: none;
     }
 }
 

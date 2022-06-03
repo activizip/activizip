@@ -19,6 +19,7 @@ public class TokenUtils {
     private static final String TOKEN_SECRET = "act1v1Z1pasS";
 
     public static String createToken(String email, String password) {
+        //Method to create a token
         return JWT.create()
                 .withHeader(Map.of("typ", "JWT", "alg", "HS256"))
                 .withClaim("email", email)
@@ -28,6 +29,7 @@ public class TokenUtils {
     }
 
     public static Pair<String, String> getTokenInfo(String token) {
+        //Method to verify the token information returning the user email and password
         try {
             Algorithm algorithm = Algorithm.HMAC256(TOKEN_SECRET);
             JWTVerifier jwtVerifier = JWT.require(algorithm).build();

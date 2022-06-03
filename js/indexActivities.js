@@ -46,7 +46,7 @@ function createActivityCard(activity) {
     return "<div class=\"card\">" +
         "<a onClick=\"openActivity(" + activity.id + ")\">" +
         "<div class=\"cont-img\">" +
-        "<img src=\"img/img-1.jpg\" alt=\"imagen actividad\" title=\"imagen realizando una actividad\" class=\"img-prom\">" +
+        "<img src=\"img/img-activity.jpg\" alt=\"imagen actividad\" title=\"imagen realizando una actividad\" class=\"img-prom\">" +
         "</div>" +
         "<div class=\"cont-info\">" +
         "<h3 id=\"activityName\">" + activity.name + "</h3>" +

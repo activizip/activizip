@@ -14,8 +14,6 @@ public interface ActivityRepository extends JpaRepository<Activity, Long> {
 
     List<Activity> findByDateGreaterThan(LocalDate localDate);
 
-    //List<Activity> findByNameContainingIgnoreCase(String name);
-
-    @Query("SELECT a FROM Activity a WHERE a.name LIKE %:name%")
-    List<Activity> findByNameContainingIgnoreCase(@Param("name") String name);
+    @Query("SELECT a FROM Activity a WHERE a.name LIKE %:name% AND a.date > :date")
+    List<Activity> findByNameContainingIgnoreCase(@Param("name") String name, @Param("date") LocalDate localDate);
 }

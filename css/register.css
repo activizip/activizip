@@ -1,6 +1,21 @@
-/*-------------------------------------- INPUSTS FORM --------------------------------------*/
+/*------------------------------ logo ------------------------------*/
+.cont-btn-header>.logo {
+    display: flex;
+    align-items: center;
+    max-width: 150px;
+    margin: 5px;
+}
+#logoActivizip {
+    width: 100%;
+}
 
-/* inputs de entrada */
+/*--------------------------- CONTAINER TEXT EMAIL ---------------------------*/
+.input-login{
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+/*-------------------------------------- INPUSTS FORM STYLE --------------------------------------*/
 .input-login, .input-date, .options, #GET-category {
 	width: 100%;
 	padding: 10px;
@@ -8,28 +23,29 @@
 	border-radius: 5px;
 	border: 1px solid rgb(209, 218, 218);
 }
-
 .input-login::placeholder, .input-date::placeholder, .options::placeholder {
 	font-size: 0.8em;
 	color: rgb(171, 189, 189);
 }
-
 .input-login:hover, .input-date:hover, .options:hover, #GET-category:hover {
 	border: 1px solid rgba(165, 184, 195, 0.986);
 }
-
 .input-login:focus, .input-date:focus, #GET-category:focus {
 	border: 1px solid rgba(3, 10, 64, 0.617);
 	outline: none;
 }
 
-/* contenedor texto de correo */
-.input-login{
-	margin-top: 5px;
-	margin-bottom: 15px;
+/* OBLIGATORY */
+.obligatory {
+    color: red;
 }
 
-/* contenedor password */
+.msj-obligatory {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/*--------------------------- CONTAINER PASSWORD ---------------------------*/
 .cont-password {
 	display: flex;
 	justify-content: space-between;
@@ -40,11 +56,10 @@
 	font-weight: bold;
 }
 
-/* ICONO PARA MOSTRAR U OCULTAR EL PASSWORD */
+/*------------------------------- ICON TO SHOW OR HIDE PASSWORD -------------------------------*/
 .cont-input-password {
 	position: relative;
 }
-
 .show-hide-pass {
 	position: absolute;
 	top: 43%;
@@ -52,11 +67,9 @@
 	transform: translateY(-50%);
 	color: #058d92e4;
 }
-
 .bi-eye-slash {
 	display: none;
 }
-
 
 /* ----------------------------- date -----------------------------*/
 .cont-input-date {
@@ -66,13 +79,11 @@
 .cont-input-date:first-child {
 	margin-right: 10px;
 }
-
 .input-date {
     width: 100%;
     padding: 10px;
 }
-
-#datePickerId {
+#GETdate {
     padding: 9px;
     font-size: 1em;
     color: rgb(78, 77, 77);
@@ -83,22 +94,21 @@
     border-radius: 5px;
     border: 1px solid rgb(229, 229, 229);
 }
-#datePickerId:hover {
+#GETdate:hover {
 	border: 1px solid rgba(165, 184, 195, 0.986);
 }
-#datePickerId:focus {
+#GETdate:focus {
 	border: 1px solid rgba(3, 10, 64, 0.617);
 	outline: none;
 }
-/* icon calendar | oculto el icono por defecto*/
+
+/* ------------------------------- HIDE THE ICON BY DEFAULT -------------------------------*/
 ::-webkit-calendar-picker-indicator {
     cursor: pointer;
     opacity: 0;
 }
 
-/************************* 
-** ESTILOS BOTON ENVIAR **
-**************************/
+/*-------------------------- STYLE BUTTON SEND --------------------------*/
 .input-login-button {
 	padding: 5px;
 	width: 100%;

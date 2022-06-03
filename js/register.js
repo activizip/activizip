@@ -1,10 +1,11 @@
 document.getElementById('btnSend').addEventListener("click", function(event) {
+
     var register = {
         "name": document.getElementById("GET-name").value,
         "lastNames": document.getElementById("GET-lastname").value,
         "email": document.getElementById("GET-email").value,
-        "password": document.getElementById("GET-password").value,
-        "birthDate": document.getElementById("datePickerId").value
+        "password": document.getElementById("GETpassword").value,
+        "birthDate": document.getElementById("GETdate").value
     }
     $.ajax({
         url: 'http://localhost:8080/users',

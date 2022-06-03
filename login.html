@@ -6,9 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- css -->
-    <link rel="stylesheet" href="css/headerFooter.css">
-    <link rel="stylesheet" href="css/login.css">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,64 +30,81 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto&display=swap"
         rel="stylesheet">
 
+    <!-- css -->
+    <link rel="stylesheet" href="css/headerFooter.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <!-- title -->
     <title>Activizip</title>
 </head>
 
 <body class="body-main">
     <header>
         <div class="cont-btn-header">
-            <button class="btn-header">
-                <a href="index.html">Home</a>
-            </button>
+            <div class="logo">
+                <!-- logo -->
+                <a href="index.html">
+                    <img src="img/logoHomeActivizip.png" alt="Logo de activizip" id="logoActivizip">
+                </a>
+            </div>
         </div>
     </header>
     <main class="main-create-activity">
         <!-- FORM LOGIN -->
-        <form action="#" method="get" class="formLogin">
+        <form action="#" method="get" class="formLogin" id="form-login" onsubmit="return false">
             <!-- title -->
-            <h1 class="h1-login">Activizip</h1>
-            <div class="message-register">
-                <p class="p-login">¿Todavía no te has registrado? <a href="register.html" class="tag-a-login">¡Hazlo ahora!</a>
-                </p>
+            <div class="cont-gral-logo">
+                <div class="cont-logo">
+                    <img src="img/logoActivizip.png" id="iconoActivizip" alt="Logo de activizip">
+                </div>
             </div>
-
             <!-- input email -->
-            <div class="cont-title-input">
-                <p>Correo electrónico</p>
+            <div id="cont-email">
+                <div class="cont-label-error">
+                    <label for="GETemail">Email</label>
+                    <small id="textErrorEmail"></small>
+                </div>
+                <input type="email" id="GETemail" class="input-login" size="40" name="email"
+                    placeholder="activizip@gmail.com">
             </div>
-            <label for="GET-email"></label>
-            <input type="email" id="GET-email" class="input-login" size="40" placeholder="Correo electronico">
 
-            <!-- input password -->
-            <div class="cont-title-input cont-password">
-                <p>Contraseña</p>
-                <a href="forgotPassword.html" class="recoverpassword tag-a-login">Olvidé la contraseña</a>
-            </div>
-            <label form="GET-password"></label>
-            <!-- icon to see password -->
-            <div class="cont-input-password">
-                <input type="password" id="GET-password" class="input-login" name="password" placeholder="Contraseña">
+            <div id="cont-password">
+                <!-- input password -->
+                <div class="cont-input-password">
+                    <div class="cont-label-error">
+                        <label form="GETpassword">Contraseña</label>
+                        <small id="textErrorPass"></small>
+                    </div>
+                    <input type="password" id="GETpassword" class="input-login" name="password">
 
-                <!-- icons bootstrap -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                    id="btn-show-pass" class="show-hide-pass bi bi-eye" viewBox="0 0 16 16">
-                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
-                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                    id="btn-hide-pass" class="show-hide-pass bi bi-eye-slash" viewBox="0 0 16 16">
-                    <path d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7.028 7.028 0 0 0-2.79.588l.77.771A5.944 5.944 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.134 13.134 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755-.165.165-.337.328-.517.486l.708.709z" />
-                    <path d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829l.822.822zm-2.943 1.299.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829z" />
-                    <path d="M3.35 5.47c-.18.16-.353.322-.518.487A13.134 13.134 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7.029 7.029 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12-.708.708z" />
-                </svg>
+                    <!-- icon to see password -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        id="btn-show-pass" class="show-hide-pass bi bi-eye" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                        <path
+                            d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        id="btn-hide-pass" class="show-hide-pass bi bi-eye-slash" viewBox="0 0 16 16">
+                        <path
+                            d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7.028 7.028 0 0 0-2.79.588l.77.771A5.944 5.944 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.134 13.134 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755-.165.165-.337.328-.517.486l.708.709z" />
+                        <path
+                            d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829l.822.822zm-2.943 1.299.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829z" />
+                        <path
+                            d="M3.35 5.47c-.18.16-.353.322-.518.487A13.134 13.134 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7.029 7.029 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12-.708.708z" />
+                    </svg>
+                </div>
             </div>
 
             <!-- button send -->
-            <input type="button" value="Send" class="input-login-button" id="btnSend">
+            <button type="submit" class="button-login" id="btnSend">Send</button>
 
             <!-- error login -->
-            <div class="message-error-session">
-                <a href="error-sesion.html" class="tag-a-login">¿No puedes iniciar sesión?</a>
+            <div class="message-register">
+                <p class="p-login">¿Todavía no te has registrado? <a href="register.html" class="tag-a-login">¡Hazlo
+                        ahora!</a>
+                </p>
             </div>
         </form>
     </main>
@@ -81,9 +112,10 @@
     <footer>
         <div>
             <ul>
-                <li><a href="#">©2022 Activizip •</a></li>
-                <li><a href="#">Politica de privacidad •</a></li>
-                <li><a href="#">Condiciones de uso •</a></li>
+                <li><a href="#">©2022 Activizip </a></li>
+                <li class="line"> | </li> 
+                <li><a href="#">Politica de privacidad </a></li>
+                <li class="line"> | </li>
                 <li><a href="#">Cookies</a></li>
             </ul>
         </div>

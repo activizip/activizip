@@ -1,12 +1,29 @@
-
 /*----------------------------- PAGE CREATE ACTIVITY -----------------------------*/
-.main-create-activity, .main-register, .body-main {
+.main-create-activity,
+.main-register,
+.body-main {
     padding: 0;
 }
+
+/*------------------------------ logo ------------------------------*/
+.cont-btn-header {
+    display: contents;
+}
+.cont-btn-header>.logo {
+    display: flex;
+    align-items: center;
+    max-width: 150px;
+    margin: 5px;
+}
+#logoActivizip {
+    width: 100%;
+}
+
 /* --------------------------- FORM ----------------------*/
 .cont-activity {
     margin: 8px 0;
 }
+
 #GET-category {
     width: 100%;
     padding: 10px;
@@ -21,47 +38,40 @@
 
 /* ----------------------------- date -----------------------------*/
 .cont-input-date {
-	align-self: end;
-	display: grid;
+    align-self: end;
+    display: grid;
 }
 .cont-input-date:first-child {
-	margin-right: 10px;
+    margin-right: 10px;
 }
-
-.input-date {
-    width: 100%;
-    padding: 10px;
-}
-
 .cont-gral-activity {
     display: grid;
     grid-template-columns: 50% 50%;
 }
-.cont-gral-activity > div:first-child {
+.cont-gral-activity>div:first-child {
     margin-right: 10px;
 }
 
 /*-------------------------------------- INPUSTS FORM --------------------------------------*/
-.input-login, .input-date, .options, #GET-category {
-	width: 100%;
-	padding: 10px;
-	font-size: 1em;
-	border-radius: 5px;
-	border: 1px solid rgb(209, 218, 218);
+.input-login {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid rgb(209, 218, 218);
 }
 
-.input-login::placeholder, .input-date::placeholder, .options::placeholder {
+.input-login::placeholder {
     font-size: 0.9em;
-	color: rgb(78, 77, 77);
+    color: rgb(78, 77, 77);
 }
-
 
 /* hour */
-#hourPickerId {
+#GEThour {
     padding: 9px;
     font-size: 1em;
     color: rgb(78, 77, 77);
-    /*agrego otro icono*/
+    /* new icon added*/
     background: url(../img/clock.jpg) no-repeat;
     background-size: 20px;
     background-position: 90%;
@@ -70,27 +80,32 @@
 }
 
 /* date */
-#datePickerId {
+#GETdate {
     padding: 9px;
     font-size: 1em;
     color: rgb(78, 77, 77);
-    /*agrego otro icono*/
+    /* new icon added*/
     background: url(../img/icon-calendary.png) no-repeat;
     background-size: 20px;
     background-position: 90%;
     border-radius: 5px;
     border: 1px solid rgb(229, 229, 229);
 }
-.input-login:hover, .input-date:hover, .options:hover, #GET-category:hover, #hourPickerId:hover, #datePickerId:hover {
-	border: 1px solid rgba(165, 184, 195, 0.986);
+
+.input-login:hover,
+#GEThour:hover,
+#GETdate:hover {
+    border: 1px solid rgba(165, 184, 195, 0.986);
 }
 
-.input-login:focus, .input-date:focus, #GET-category:focus, #hourPickerId:focus, #datePickerId:focus {
-	border: 1px solid rgba(3, 10, 64, 0.617);
-	outline: none;
+.input-login:focus,
+#GEThour:focus,
+#GETdate:focus {
+    border: 1px solid rgba(3, 10, 64, 0.617);
+    outline: none;
 }
 
-/* icon calendar | oculto el icono por defecto*/
+/* ------------------------------- HIDE THE ICON BY DEFAULT -------------------------------*/
 ::-webkit-calendar-picker-indicator {
     cursor: pointer;
     opacity: 0;
@@ -98,20 +113,22 @@
 
 /* OBLIGATORY */
 .obligatory {
-	color: red;
+    color: red;
 }
+
 .msj-obligatory {
-	text-align: center;
-	font-size: 0.9em;
+    text-align: center;
+    font-size: 0.9em;
 }
-/*-------------------------- ESTILOS BOTON ENVIAR --------------------------*/
+
+/*-------------------------- STYLE BUTTON SEND --------------------------*/
 #btnSend {
-	padding: 5px;
-	width: 100%;
-	font-size: 1em;
-	background: rgb(3, 10, 64, 1);
-	color: rgb(255, 255, 255);
-	border-radius: 5px;
-	cursor: pointer;
-	border: none;
+    padding: 5px;
+    width: 100%;
+    font-size: 1em;
+    background: rgb(3, 10, 64, 1);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
 }

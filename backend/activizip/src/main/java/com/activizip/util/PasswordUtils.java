@@ -8,6 +8,7 @@ import java.security.NoSuchAlgorithmException;
 public class PasswordUtils {
 
     public static String encrypt(String password) {
+        //Method to encrypt the password
         try {
             return toHexString(getSHA(password));
         } catch (NoSuchAlgorithmException e) {

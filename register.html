@@ -6,9 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- css -->
-    <link rel="stylesheet" href="css/headerFooter.css">
-    <link rel="stylesheet" href="css/register.css">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,15 +30,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto&display=swap"
         rel="stylesheet">
 
+    <!-- css -->
+    <link rel="stylesheet" href="css/headerFooter.css">
+    <link rel="stylesheet" href="css/register.css">
+
+    <!-- title -->
     <title>Activizip</title>
 </head>
 
 <body class="body-main">
     <header>
         <div class="cont-btn-header">
-            <button class="btn-header">
-                <a href="index.html">Home</a>
-            </button>
+            <div class="logo">
+                <!-- logo -->
+                <a href="index.html">
+                    <img src="img/logoHomeActivizip.png" alt="Logo de activizip" id="logoActivizip">
+                </a>
+            </div>
         </div>
     </header>
     <main class="main-register">
@@ -44,13 +66,12 @@
                         <!-- input name -->
                         <div>
                             <label for="GET-name">Nombres<small class="obligatory">*</small></label>
-                            <input type="text" id="GET-name" class="input-login" user="name" size="40" placeholder="Nombre">
+                            <input type="text" id="GET-name" class="input-login" size="40" placeholder="Nombre">
                         </div>
                         <!-- input lastname -->
                         <div>
                             <label for="GET-lastname">Apellidos<small class="obligatory">*</small></label>
-                            <input type="text" id="GET-lastname" class="input-login" user="lastname" size="40"
-                                placeholder="Apellidos">
+                            <input type="text" id="GET-lastname" class="input-login" size="40" placeholder="Apellidos">
                         </div>
                     </div>
                     <!-- input email -->
@@ -59,10 +80,10 @@
                         placeholder="Correo electronico">
 
                     <!-- input password -->
-                    <label form="GET-password">Contraseña nueva<small class="obligatory">*</small></label>
+                    <label form="GETpassword">Contraseña nueva<small class="obligatory">*</small></label>
                     <!-- icon to see password -->
                     <div class="cont-input-password">
-                        <input type="password" id="GET-password" class="input-login" name="password"
+                        <input type="password" id="GETpassword" class="input-login" name="password"
                             placeholder="Contraseña">
                         <!-- icons bootstrap -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
@@ -72,7 +93,7 @@
                             <path
                                 d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
                         </svg>
-                        
+
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                             id="btn-hide-pass" class="show-hide-pass bi bi-eye-slash" viewBox="0 0 16 16">
                             <path
@@ -86,23 +107,13 @@
 
                     <!-- input age -->
                     <div class="cont-input-date">
-                        <label for="GET-date">Fecha de nacimiento<small class="obligatory">*</small></label>
-                        <input id="datePickerId" type="date" name="date">
+                        <label for="GETdate">Fecha de nacimiento<small class="obligatory">*</small></label>
+                        <input id="GETdate" type="date" name="date">
                     </div>
-                    
+
                     <!-- button send -->
                     <div class="cont-button-send">
                         <input type="button" value="Sing in" class="input-login-button" id="btnSend">
-                    </div>
-                    <div>
-                        <small>
-                            Al hacer clic en Registrarte, aceptas nuestras <a href="conditions.html">Condiciones</a>.
-                            Obtén
-                            más información sobre cómo recopilamos, usamos y compartimos tu información en la <a
-                                href="dataPolitics.html">Política de datos</a>, así como el uso que hacemos de las
-                            cookies y
-                            tecnologías similares en nuestra <a href="cookies">Política de cookies</a>.
-                        </small>
                     </div>
                 </div>
             </div>
@@ -112,9 +123,10 @@
     <footer>
         <div>
             <ul>
-                <li><a href="#">©2022 Activizip •</a></li>
-                <li><a href="#">Politica de privacidad •</a></li>
-                <li><a href="#">Condiciones de uso •</a></li>
+                <li><a href="#">©2022 Activizip </a></li>
+                <li class="line">|</li>
+                <li><a href="#">Politica de privacidad </a></li>
+                <li class="line">|</li>
                 <li><a href="#">Cookies</a></li>
             </ul>
         </div>

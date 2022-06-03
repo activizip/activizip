@@ -6,25 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- css -->
-    <link rel="stylesheet" href="css/headerFooter.css">
-    <link rel="stylesheet" href="css/createActivity.css">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto&display=swap"
-        rel="stylesheet">
+    rel="stylesheet">
+    
+    <!-- css -->
+    <link rel="stylesheet" href="css/headerFooter.css">
+    <link rel="stylesheet" href="css/createActivity.css">
 
+    <!-- title -->
     <title>Activizip</title>
 </head>
 
 <body class="body-main">
     <header>
         <div class="cont-btn-header">
-            <button class="btn-header">
-                <a href="index.html">Home</a>
-            </button>
+            <div class="logo">
+                <!-- logo -->
+                <a href="index.html">
+                    <img src="img/logoHomeActivizip.png" alt="Logo de activizip" id="logoActivizip">
+                </a>
+            </div>
         </div>
     </header>
     <main class="main-create-activity">
@@ -51,13 +73,13 @@
                         <div class="cont-date">
                             <!-- day and month -->
                             <div class="cont-input-date">
-                                <label for="GET-date">Fecha <small class="obligatory">*</small></label>
-                                <input id="datePickerId" type="date" name="date" required>
+                                <label for="GETdate">Fecha <small class="obligatory">*</small></label>
+                                <input id="GETdate" type="date" name="date" required>
                             </div>
                             <!-- hour -->
                             <div class="cont-input-date">
-                                <label for="GET-hour">Hora <small class="obligatory">*</small></label>
-                                <input id="hourPickerId" type="time" value="19:00" name="appt" required>
+                                <label for="GEThour">Hora <small class="obligatory">*</small></label>
+                                <input id="GEThour" type="time" value="19:00" name="appt" required>
                             </div>
                         </div>
                         <!-- place -->
@@ -105,9 +127,10 @@
     <footer>
         <div>
             <ul>
-                <li><a href="#">©2022 Activizip •</a></li>
-                <li><a href="#">Politica de privacidad •</a></li>
-                <li><a href="#">Condiciones de uso •</a></li>
+                <li><a href="#">©2022 Activizip </a></li>
+                <li class="line">|</li>
+                <li><a href="#">Politica de privacidad </a></li>
+                <li class="line">|</li>
                 <li><a href="#">Cookies</a></li>
             </ul>
         </div>

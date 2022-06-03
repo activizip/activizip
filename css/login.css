@@ -1,37 +1,40 @@
-/*-------------------------------------- FORMULARIO --------------------------------------*/
+/*------------------------------ logo ------------------------------*/
+.cont-btn-header>.logo {
+	display: flex;
+    align-items: center;
+    max-width: 150px;
+    margin: 5px;
+}
+#logoActivizip {
+	width: 100%;
+}
+
+
+/*------------------------------ icon login ------------------------------*/
+.cont-gral-logo {
+	display: flex;
+    justify-content: center;
+}
+.cont-logo {
+	max-width: 200px;
+    margin: 5px;
+}
+#iconoActivizip {
+	width: 100%;
+}
+
+/*-------------------------------------- FORM STYLE --------------------------------------*/
 .tag-a-login {
 	color: #009fa5;
 	font-weight: bold;
 }
 
-/* ICON TO CLOSE LOGIN */
-.cont-icon-close {
-	position: absolute;
-	color: #464545;
-	right: 12px;
-	transform: translateY(-100%);
-}
-
-.bi-x {
-	cursor: pointer;
-	color: #00c6cd92;
-}
-
-/* title */
-.h1-login {
-	margin-top: 10px;
-	text-align: center;
-	color: rgb(3, 10, 64, 1);
-}
-
-/* textos */
+/* texts */
 .p-login {
 	font-weight: bold;
 }
 
-/*************************************************** 
-** mensaje para registrarse en caso de no estarlo **
-****************************************************/
+/*-------------------------------------- REGISTRATION MESSAGE STYLE --------------------------------------*/
 .formLogin {
 	background: #fff;
 	padding: 20px;
@@ -40,8 +43,8 @@
 	display: flex;
 	align-content: center;
 	justify-content: center;
-	margin-top: 15px;
-	margin-bottom: 50px;
+	margin-top: 25px;
+	margin-bottom: 20px;
 	font-size: 0.8em;
 }
 
@@ -50,57 +53,40 @@
 	font-weight: bold;
 }
 
-/*-------------------------------------- INPUSTS FORM --------------------------------------*/
-/* inputs de entrada */
-.input-login, .input-date, .options, #GET-category {
+/*-------------------------------------- INPUSTS FORM STYLE --------------------------------------*/
+.input-login, .input-date {
 	width: 100%;
 	padding: 10px;
 	font-size: 1em;
 	border-radius: 5px;
 	border: 1px solid rgb(209, 218, 218);
+	margin-top: 10px;
 }
 
-.input-login::placeholder, .input-date::placeholder, .options::placeholder {
+.input-login::placeholder {
 	font-size: 0.8em;
 	color: rgb(171, 189, 189);
 }
 
-.input-login:hover, .input-date:hover, .options:hover, #GET-category:hover {
+.input-login:hover {
 	border: 1px solid rgba(165, 184, 195, 0.986);
 }
 
-.input-login:focus, .input-date:focus, #GET-category:focus {
+.input-login:focus {
 	border: 1px solid rgba(3, 10, 64, 0.617);
 	outline: none;
 }
 
-/* contenedor texto de correo */
-.cont-title-input {
-	margin-top: 25px;
-	margin-bottom: 10px;
-}
-
-/* contenedor password */
-.cont-password {
-	display: flex;
-	justify-content: space-between;
-}
-
-.cont-password>a {
-	align-self: flex-end;
-	font-size: 0.8em;
-	font-weight: bold;
-}
-
-/* ICONO PARA MOSTRAR U OCULTAR EL PASSWORD */
+/*------------------------------- ICON TO SHOW OR HIDE PASSWORD -------------------------------*/
 .cont-input-password {
+	margin-top: 20px;
 	margin-bottom: 20px;
 	position: relative;
 }
 
 .show-hide-pass {
 	position: absolute;
-	top: 50%;
+	top: 71%;
 	right: 12px;
 	transform: translateY(-50%);
 	color: #058d92e4;
@@ -110,10 +96,20 @@
 	display: none;
 }
 
-/************************* 
-** ESTILOS BOTON ENVIAR **
-**************************/
-.input-login-button {
+/* text error */
+.cont-label-error {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+	width: 100%;
+}
+
+#textError {
+	color: red;
+}
+
+/*------------------------------- BUTTON SEND STYLE -------------------------------*/
+#btnSend {
 	padding: 5px;
 	width: 100%;
 	font-size: 1em;
@@ -122,17 +118,4 @@
 	border-radius: 5px;
 	cursor: pointer;
 	border: none;
-}
-
-/************************* 
-** MENSAJE ERROR SESION **
-**************************/
-.formLogin >.message-error-session {
-	margin-bottom: 10px;
-	display: flex;
-	align-content: center;
-	justify-content: center;
-	margin-top: 15px;
-	font-size: 0.8em;
-	font-weight: bold;
 }

@@ -6,18 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- css -->
     <link rel="stylesheet" href="css/profile.css">
 
+    <!-- title -->
     <title>Activizip</title>
 </head>
 
 <body class="body-main">
     <header>
         <div class="cont-btn-header">
-            <button class="btn-header">
-                <a href="index.html">Home</a>
-            </button>
+            <div class="logo">
+                <!-- logo -->
+                <a href="index.html">
+                    <img src="img/logoHomeActivizip.png" alt="Logo de activizip" id="logoActivizip">
+                </a>
+            </div>
         </div>
     </header>
     <main class="main">
@@ -25,7 +47,7 @@
         <div class="cont-activity">
             <!-- img -->
             <div class="cont-img">
-                <img src="img/img-1.jpg" width="960" height="640" />
+                <img src="img/img-user.png" width="960" height="640" alt="Imagen de perfil" id="img-profile"/>
             </div>
             <!-- text -->
             <div class="cont-info">
@@ -45,9 +67,10 @@
     <footer>
         <div>
             <ul>
-                <li><a href="#">©2022 Activizip •</a></li>
-                <li><a href="#">Politica de privacidad •</a></li>
-                <li><a href="#">Condiciones de uso •</a></li>
+                <li><a href="#">©2022 Activizip </a></li>
+                <li class="line">|</li>
+                <li><a href="#">Politica de privacidad </a></li>
+                <li class="line">|</li>
                 <li><a href="#">Cookies</a></li>
             </ul>
         </div>
@@ -57,51 +80,3 @@
 </body>
 
 </html>
-
-<!-- 
-<div class="img-perfil">
-
-                <input type="file" id="imagen" style="display: none;" accept="image/">
-
-                <img id="imagen-perfil" src="img/imagen-perfil.jpg" alt="Imagen de Perfil">
-
-            </div>
-
-
-            $('#imagen-perfil').on('click', function(e){
-
-    $('#imagen').trigger('click');
-
-  });
-
- 
-
-  //cambiar la imagen en la tarjeta, escuachando cuando cambia
-
-  imagenI.addEventListener('change', (e) => {
-
- 
-
-    //se pueden seleccionar varios archivos
-
-    let archivos = imagenI.files
-
- 
-
-    //se coge el primer archivo para mostrar
-
-    let archivo1 = archivos[0]
-
-    //conversión a objeto tipo objectURL
-
-    let objectURL = URL.createObjectURL(archivo1)
-
-    //cambiamos el src de la imagen para sacar por pantalla
-
-    imagen.src = objectURL
-
- 
-
-  })
-
- -->
